@@ -1,0 +1,264 @@
+# Compile of rx_synch.vhd failed with 1 errors.
+# Compile of rx_synch.vhd failed with 54 errors.
+# Compile of rx_synch.vhd failed with 54 errors.
+# Compile of rx_synch.vhd failed with 8 errors.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd failed with 1 errors.
+# Compile of break_counter.vhd was successful.
+# Compile of tb_break_counter.vhd failed with 7 errors.
+# Compile of tb_break_counter.vhd failed with 2 errors.
+# Compile of tb_break_counter.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+vsim -gui work.tb_break_counter
+# vsim -gui work.tb_break_counter 
+# Start time: 02:34:34 on Jan 14,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+add wave -position insertpoint sim:/tb_break_counter/*
+run
+add wave  \
+sim:/tb_break_counter/clk_tb \
+sim:/tb_break_counter/rst_tb \
+sim:/tb_break_counter/rx_tb \
+sim:/tb_break_counter/out_tb \
+sim:/tb_break_counter/end_sim \
+sim:/tb_break_counter/SYS_CLK \
+sim:/tb_break_counter/UART_CLK \
+sim:/tb_break_counter/RESET_TIME
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+vsim -gui work.tb_break_counter
+# End time: 02:43:52 on Jan 14,2023, Elapsed time: 0:09:18
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_break_counter 
+# Start time: 02:43:52 on Jan 14,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+add wave  \
+sim:/tb_break_counter/clk_tb \
+sim:/tb_break_counter/rst_tb \
+sim:/tb_break_counter/rx_tb \
+sim:/tb_break_counter/out_tb \
+sim:/tb_break_counter/end_sim
+run
+add wave  \
+sim:/tb_break_counter/break_counter_DUT/clk \
+sim:/tb_break_counter/break_counter_DUT/rst \
+sim:/tb_break_counter/break_counter_DUT/rx \
+sim:/tb_break_counter/break_counter_DUT/status \
+sim:/tb_break_counter/break_counter_DUT/clk_count \
+sim:/tb_break_counter/break_counter_DUT/bit_count
+add wave  \
+sim:/tb_break_counter/clk_tb \
+sim:/tb_break_counter/rst_tb \
+sim:/tb_break_counter/rx_tb \
+sim:/tb_break_counter/out_tb \
+sim:/tb_break_counter/end_sim
+restart
+run -all
+vsim -gui work.tb_break_counter
+# End time: 02:47:35 on Jan 14,2023, Elapsed time: 0:03:43
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_break_counter 
+# Start time: 02:47:35 on Jan 14,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+add wave -position insertpoint sim:/tb_break_counter/*
+add wave  \
+sim:/tb_break_counter/break_counter_DUT/clk \
+sim:/tb_break_counter/break_counter_DUT/rst \
+sim:/tb_break_counter/break_counter_DUT/rx \
+sim:/tb_break_counter/break_counter_DUT/status \
+sim:/tb_break_counter/break_counter_DUT/clk_count \
+sim:/tb_break_counter/break_counter_DUT/bit_count
+run -all
+# Compile of tb_break_counter.vhd was successful.
+run -all
+run -all
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 19450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 19450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 19450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 19450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 19450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 19450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 18950 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+add wave sim:/tb_break_counter/*
+add wave sim:/tb_break_counter/break_counter_DUT/*
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 9450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 9450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 9450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 9450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 9 is out of range 0 to 8.
+#    Time: 7050 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# Compile of tb_break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+run -all
+# ** Fatal: (vsim-3421) Value 12 is out of range 0 to 11.
+#    Time: 9450 ns  Iteration: 0  Process: /tb_break_counter/break_counter_DUT/p_break_counter File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 50
+# Fatal error in Process p_break_counter at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd 50 Process p_break_counter
+# 
