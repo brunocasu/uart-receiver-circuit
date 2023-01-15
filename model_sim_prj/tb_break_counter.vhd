@@ -1,7 +1,8 @@
 library IEEE;
   use IEEE.std_logic_1164.all;
 
-entity tb_break_counter is  -- The testbench has no interface, so it is an empty entity (Be careful: the keyword "is" was missing in the code written in class).
+-- testbench file
+entity tb_break_counter is
 end entity;
 
 architecture bhv of tb_break_counter is
@@ -16,7 +17,7 @@ architecture bhv of tb_break_counter is
   signal out_tb       : std_logic := '0';
   signal end_sim      : std_logic := '1';
 
-  component break_counter is  -- be careful, it is only a component declaration. The component shall be instantiated after the keyword "begin" by linking the gates with the testbench signals for the test
+  component break_counter is
     generic(
         OS_RATE     : natural := 8; -- clock over sampling rate (UART bit rate B = 115200)
         BREAK_COUNT : natural := 11 -- number of consecutive '0's to detect a BREAK
@@ -30,8 +31,7 @@ architecture bhv of tb_break_counter is
   end component;
 
 begin
-
-  clk_tb <= (not(clk_tb) and end_sim) after SYS_CLK / 2;  -- The clock toggles after T_CLK / 2 when end_sim is high. When end_sim is forced low, the clock stops toggling and the simulation ends.
+  clk_tb <= (not(clk_tb) and end_sim) after SYS_CLK / 2;
   rst_tb <= '1' after RESET_TIME;
 
   break_counter_DUT: break_counter
@@ -43,45 +43,46 @@ begin
       status    => out_tb
     );
 
-  stimuli: process(clk_tb, rst_tb)  -- process used to make the testbench signals change synchronously with the rising edge of the clock
-    variable t : integer := 0;  -- variable used to count the clock cycle after the reset
+  stimuli: process(clk_tb, rst_tb)
+    variable test_counter : integer := 0;
   begin
     if (rst_tb = '0') then
       rx_tb <= '1';
-      t := 0;
+      test_counter := 0;
     elsif (rising_edge(clk_tb)) then
 
-      case(t) is   -- specifying the input increment_tb and end_sim depending on the value of t ( and so on the number of the passed clock cycles).
+      case(test_counter) is
 
-        when 1  => rx_tb    <= '0'; -- start bit
-        when 8  => rx_tb    <= '0'; -- w0
-        when 16  => rx_tb   <= '0'; -- w1
-        when 24 => rx_tb    <= '0'; -- w2
-        when 32 => rx_tb    <= '0'; -- w3
-        when 40  => rx_tb   <= '0'; -- w4
-        when 48  => rx_tb   <= '0'; -- w5
-        when 56  => rx_tb   <= '0'; -- w6
-        when 64 => rx_tb    <= '0'; -- parity bit
-        when 72 => rx_tb    <= '0'; -- stop 1
-        when 80  => rx_tb   <= '0'; -- stop 2
+        when 1  => rx_tb  <= '0'; -- start bit
+        when 9  => rx_tb  <= '0'; -- w0
+        when 17 => rx_tb  <= '0'; -- w1
+        when 25 => rx_tb  <= '0'; -- w2
+        when 33 => rx_tb  <= '0'; -- w3
+        when 41 => rx_tb  <= '0'; -- w4
+        when 49 => rx_tb  <= '0'; -- w5
+        when 57 => rx_tb  <= '0'; -- w6
+        when 65 => rx_tb  <= '0'; -- parity bit
+        when 73 => rx_tb  <= '0'; -- stop 1
+        when 81 => rx_tb  <= '0'; -- stop 2
 
-        when 88  => rx_tb    <= '0'; -- start bit
-        when 96  => rx_tb    <= '1';-- w0
-        when 104 => rx_tb    <= '1';-- w1
-        when 112  => rx_tb   <= '0';-- w2
-        when 120 => rx_tb    <= '0';-- w3
-        when 128 => rx_tb    <= '0';-- w4
-        when 136  => rx_tb   <= '0';-- w5
-        when 144  => rx_tb   <= '0';-- w6
-        when 152  => rx_tb   <= '0';-- parity bit
-        when 160 => rx_tb    <= '1';-- stop 1
-        when 168 => rx_tb    <= '1';-- stop 2
+        when 89  => rx_tb   <= '1'; -- start bit
+        when 97  => rx_tb   <= '1';-- w0
+        when 105 => rx_tb   <= '1';-- w1
+        when 113 => rx_tb   <= '1';-- w2
+        when 121 => rx_tb   <= '1';-- w3
+        when 129 => rx_tb   <= '1';-- w4
+        when 137 => rx_tb   <= '1';-- w5
+        when 145 => rx_tb   <= '1';-- w6
+        when 153 => rx_tb   <= '1';-- parity bit
+        when 161 => rx_tb   <= '0';-- stop 1
+        when 169 => rx_tb   <= '0';-- stop 2
 
-        when 180 => end_sim <= '0';  -- This command stops the simulation
-        when others => null;  -- Specifying that nothing happens in the other cases
+        when 177 => rx_tb    <= '1';
+        when 180 => end_sim  <= '0';
+        when others => null;
       end case;
 
-      t := t + 1;  -- the variable is updated exactly here (try to move this statement before the "case(t) is" one and watch the difference in the simulation)
+      test_counter := test_counter + 1;
 
     end if;
   end process;

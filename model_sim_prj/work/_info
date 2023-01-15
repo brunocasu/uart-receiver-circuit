@@ -10,10 +10,10 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 Ebreak_counter
-Z0 w1673658070
+Z0 w1673753344
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 4
+!i122 76
 Z3 dC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj
 Z4 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd
 Z5 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd
@@ -23,9 +23,9 @@ VHXBgk>iEPV6cXAREXVhF_1
 !s100 i<_X81kJD?igOGXG`GaVB0
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1673658074
+Z7 !s110 1673753489
 !i10b 1
-Z8 !s108 1673658074.000000
+Z8 !s108 1673753489.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd|
 Z10 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd|
 !i113 1
@@ -35,11 +35,11 @@ Astruct
 R1
 R2
 DEx4 work 13 break_counter 0 22 HXBgk>iEPV6cXAREXVhF_1
-!i122 4
-l22
-L17 47
-VHTiPF2Q6]XJ9k9Bo>]1L^3
-!s100 gcW>Y1IV]PO`Vgl3[Q2S71
+!i122 76
+l24
+L17 66
+VJ5572=hmKooee7@P8k6G71
+!s100 J`dm;39n]j=d8d[^KM`SS1
 R6
 32
 R7
@@ -92,22 +92,22 @@ R19
 R11
 R12
 Etb_break_counter
-Z20 w1673663473
+Z20 w1673752994
 R1
 R2
-!i122 26
+!i122 77
 R3
 Z21 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd
 Z22 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd
 l0
-L4 1
-VRT0jXS0lz87[?=ODiPQjO3
-!s100 hJd9ob>dLCOKoTNzCjYi>1
+L5 1
+VnHQz<Ei>LES_TNS@:28aE2
+!s100 1eA^:L7WIoU1?0c51;E8h1
 R6
 32
-Z23 !s110 1673663476
+Z23 !s110 1673753493
 !i10b 1
-Z24 !s108 1673663476.000000
+Z24 !s108 1673753492.000000
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd|
 Z26 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd|
 !i113 1
@@ -116,12 +116,12 @@ R12
 Abhv
 R1
 R2
-Z27 DEx4 work 16 tb_break_counter 0 22 RT0jXS0lz87[?=ODiPQjO3
-!i122 26
-l32
-Z28 L7 83
-VL6Yj`i1g]WOF;9e[zzE?S1
-!s100 EdLO_iHdUB3VYm3MVk4mg2
+Z27 DEx4 work 16 tb_break_counter 0 22 nHQz<Ei>LES_TNS@:28aE2
+!i122 77
+l33
+Z28 L8 83
+Z29 VdV`8X@9Fm>OPm?VJ02K]G2
+Z30 !s100 3HB90:=QHH_n]WRgb1=Li0
 R6
 32
 R23
