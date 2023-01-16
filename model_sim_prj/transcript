@@ -521,3 +521,229 @@ sim:/tb_break_counter/break_counter_DUT/start_count \
 sim:/tb_break_counter/break_counter_DUT/bit_count \
 sim:/tb_break_counter/break_counter_DUT/idle_flag
 run -all
+# Compile of rx_synch.vhd failed with 4 errors.
+# Compile of rx_synch.vhd failed with 2 errors.
+# Compile of rx_synch.vhd failed with 1 errors.
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd failed with 1 errors.
+# Compile of tb_rx_synch.vhd was successful.
+vsim -gui work.tb_rx_synch
+# End time: 23:48:28 on Jan 15,2023, Elapsed time: 19:16:43
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_rx_synch 
+# Start time: 23:48:29 on Jan 15,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+add wave  \
+sim:/tb_rx_synch/clk_tb \
+sim:/tb_rx_synch/rst_tb \
+sim:/tb_rx_synch/rx_tb \
+sim:/tb_rx_synch/en_tb \
+sim:/tb_rx_synch/status_out_tb \
+sim:/tb_rx_synch/sampled_out_tb \
+sim:/tb_rx_synch/end_sim
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/clk \
+sim:/tb_rx_synch/rx_synch_DUT/rst \
+sim:/tb_rx_synch/rx_synch_DUT/en \
+sim:/tb_rx_synch/rx_synch_DUT/rx \
+sim:/tb_rx_synch/rx_synch_DUT/sampled_rx \
+sim:/tb_rx_synch/rx_synch_DUT/synch_status \
+sim:/tb_rx_synch/rx_synch_DUT/clk_count \
+sim:/tb_rx_synch/rx_synch_DUT/bit_count \
+sim:/tb_rx_synch/rx_synch_DUT/start_count \
+sim:/tb_rx_synch/rx_synch_DUT/idle_flag \
+sim:/tb_rx_synch/rx_synch_DUT/frame_error_flag
+run -all
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 1450 ns  Iteration: 0  Process: /tb_rx_synch/rx_synch_DUT/p_rx_synch File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd
+# Fatal error in Process p_rx_synch at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd line 57
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd 57 Process p_rx_synch
+# 
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
+# ** Fatal: (vsim-3734) Index value 8 is out of range 7 downto 0.
+#    Time: 7850 ns  Iteration: 0  Process: /tb_rx_synch/rx_synch_DUT/p_rx_synch File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd
+# Fatal error in Process p_rx_synch at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd line 57
+# 
+# HDL call sequence:
+# Stopped at C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd 57 Process p_rx_synch
+# 
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+vsim -gui work.tb_rx_synch
+# End time: 00:46:57 on Jan 16,2023, Elapsed time: 0:58:28
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_rx_synch 
+# Start time: 00:46:57 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+add wave  \
+sim:/tb_rx_synch/clk_tb \
+sim:/tb_rx_synch/rst_tb \
+sim:/tb_rx_synch/rx_tb \
+sim:/tb_rx_synch/en_tb \
+sim:/tb_rx_synch/status_out_tb \
+sim:/tb_rx_synch/sampled_out_tb \
+sim:/tb_rx_synch/end_sim
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/clk \
+sim:/tb_rx_synch/rx_synch_DUT/rst \
+sim:/tb_rx_synch/rx_synch_DUT/en \
+sim:/tb_rx_synch/rx_synch_DUT/rx \
+sim:/tb_rx_synch/rx_synch_DUT/sampled_rx \
+sim:/tb_rx_synch/rx_synch_DUT/synch_status \
+sim:/tb_rx_synch/rx_synch_DUT/clk_count \
+sim:/tb_rx_synch/rx_synch_DUT/bit_count \
+sim:/tb_rx_synch/rx_synch_DUT/start_count \
+sim:/tb_rx_synch/rx_synch_DUT/idle_flag \
+sim:/tb_rx_synch/rx_synch_DUT/frame_error_flag
+run -all
+# Compile of rx_synch.vhd failed with 2 errors.
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_rx_synch/rx_synch_DUT/frame_error_flag'. 
+run -all
+# Compile of tb_rx_synch.vhd was successful.
+add wave  \
+sim:/tb_rx_synch/clk_tb \
+sim:/tb_rx_synch/rst_tb \
+sim:/tb_rx_synch/rx_tb \
+sim:/tb_rx_synch/en_tb \
+sim:/tb_rx_synch/status_out_tb \
+sim:/tb_rx_synch/sampled_out_tb \
+sim:/tb_rx_synch/end_sim
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/clk \
+sim:/tb_rx_synch/rx_synch_DUT/rst \
+sim:/tb_rx_synch/rx_synch_DUT/en \
+sim:/tb_rx_synch/rx_synch_DUT/rx \
+sim:/tb_rx_synch/rx_synch_DUT/sampled_rx \
+sim:/tb_rx_synch/rx_synch_DUT/synch_status \
+sim:/tb_rx_synch/rx_synch_DUT/clk_count \
+sim:/tb_rx_synch/rx_synch_DUT/bit_count \
+sim:/tb_rx_synch/rx_synch_DUT/start_count \
+sim:/tb_rx_synch/rx_synch_DUT/idle_flag
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+vsim -gui work.tb_rx_synch
+# End time: 01:00:36 on Jan 16,2023, Elapsed time: 0:13:39
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_rx_synch 
+# Start time: 01:00:36 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+add wave  \
+sim:/tb_rx_synch/clk_tb \
+sim:/tb_rx_synch/en_tb \
+sim:/tb_rx_synch/end_sim \
+sim:/tb_rx_synch/RESET_TIME \
+sim:/tb_rx_synch/rst_tb \
+sim:/tb_rx_synch/rx_tb \
+sim:/tb_rx_synch/sampled_out_tb \
+sim:/tb_rx_synch/status_out_tb \
+sim:/tb_rx_synch/SYS_CLK
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/bit_count \
+sim:/tb_rx_synch/rx_synch_DUT/clk \
+sim:/tb_rx_synch/rx_synch_DUT/clk_count \
+sim:/tb_rx_synch/rx_synch_DUT/en \
+sim:/tb_rx_synch/rx_synch_DUT/idle_flag \
+sim:/tb_rx_synch/rx_synch_DUT/OS_RATE \
+sim:/tb_rx_synch/rx_synch_DUT/rst \
+sim:/tb_rx_synch/rx_synch_DUT/rx \
+sim:/tb_rx_synch/rx_synch_DUT/sampled_rx \
+sim:/tb_rx_synch/rx_synch_DUT/start_count \
+sim:/tb_rx_synch/rx_synch_DUT/STOP_BITS \
+sim:/tb_rx_synch/rx_synch_DUT/synch_status \
+sim:/tb_rx_synch/rx_synch_DUT/WORD_SIZE
+run -all
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+run -all
+# Compile of rx_synch.vhd was successful.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# 6 compiles, 1 failed with 1 error.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd failed with 1 errors.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+run -all
