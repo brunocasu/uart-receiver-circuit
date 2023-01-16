@@ -747,3 +747,27 @@ restart
 # Loading work.tb_rx_synch(bhv)
 # Loading work.rx_synch(struct)
 run -all
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd failed with 2 errors.
+# Compile of tb_rx_synch.vhd failed with 4 errors.
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+run -all
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+run -all
+# Compile of tb_rx_synch.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+run -all

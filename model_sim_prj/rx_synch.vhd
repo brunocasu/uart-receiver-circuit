@@ -27,6 +27,8 @@ architecture struct of rx_synch is
 
 begin
     p_rx_synch : process(clk, rst)
+    variable test : integer := 0;
+
     begin
         if rst = '0' then -- reset active low
             sampled_rx <= (others => '0');
