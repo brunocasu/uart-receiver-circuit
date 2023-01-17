@@ -771,3 +771,338 @@ restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.tb_rx_synch(bhv)
 run -all
+# Compile of rx_synch.vhd failed with 2 errors.
+# Compile of rx_synch.vhd failed with 1 errors.
+# Compile of rx_synch.vhd failed with 3 errors.
+# Compile of rx_synch.vhd failed with 6 errors.
+# Compile of rx_synch.vhd failed with 6 errors.
+# Compile of rx_synch.vhd failed with 2 errors.
+# Compile of rx_synch.vhd failed with 1 errors.
+# Compile of rx_synch.vhd was successful.
+# Compile of tb_rx_synch.vhd failed with 2 errors.
+# Compile of tb_rx_synch.vhd failed with 2 errors.
+# Compile of tb_rx_synch.vhd failed with 1 errors.
+# Compile of tb_rx_synch.vhd was successful.
+vsim -gui work.tb_rx_synch
+# End time: 18:41:51 on Jan 16,2023, Elapsed time: 17:41:15
+# Errors: 0, Warnings: 14
+# vsim -gui work.tb_rx_synch 
+# Start time: 18:41:51 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+# ** Fatal: (vsim-3817) Port "clk" of entity "break_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_rx_synch/rx_synch_DUT/break_DUT File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:41:52 on Jan 16,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 3 errors.
+vsim -gui work.tb_rx_synch
+# vsim -gui work.tb_rx_synch 
+# Start time: 18:47:18 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+# ** Error: (vsim-3732) No default binding for component instance 'break_DUT'.
+#    The following component port is not on the entity:
+#           status_break
+#    Time: 0 ps  Iteration: 0  Instance: /tb_rx_synch/rx_synch_DUT/break_DUT File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd Line: 59
+# Error loading design
+# End time: 18:47:18 on Jan 16,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd failed with 1 errors.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 3 failed with 4 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 3 errors.
+vsim -gui work.tb_rx_synch
+# vsim -gui work.tb_rx_synch 
+# Start time: 18:50:03 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+add wave  \
+sim:/tb_rx_synch/clear_tb \
+sim:/tb_rx_synch/clk_tb \
+sim:/tb_rx_synch/en_tb \
+sim:/tb_rx_synch/end_sim
+add wave  \
+sim:/tb_rx_synch/rst_tb \
+sim:/tb_rx_synch/rx_tb \
+sim:/tb_rx_synch/sampled_out_tb \
+sim:/tb_rx_synch/status_out_tb
+run -all
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/idle_flag
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/bit_count
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+run -all
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/clear
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd failed with 1 errors.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 3 failed with 4 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd failed with 2 errors.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 3 failed with 5 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# ** Warning: (vsim-3473) Component instance "dff_DUT : dff" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_rx_synch/rx_synch_DUT File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd
+# Loading work.break_counter(struct)
+run -all
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/break_DUT/status
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.dff(struct)
+# Loading work.break_counter(struct)
+run -all
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/synch_status
+restart
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# ** Fatal: (vsim-3348) Port length (3) does not match actual length (4) for port "/tb_rx_synch/rx_synch_DUT/synch_status".
+#    Time: 0 ps  Iteration: 0  Instance: /tb_rx_synch/rx_synch_DUT File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd Line: 19
+# FATAL ERROR while loading design
+vsim -gui work.tb_rx_synch
+# vsim -gui work.tb_rx_synch 
+# Start time: 18:50:03 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# ** Fatal: (vsim-3348) Port length (3) does not match actual length (4) for port "/tb_rx_synch/rx_synch_DUT/synch_status".
+#    Time: 0 ps  Iteration: 0  Instance: /tb_rx_synch/rx_synch_DUT File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd Line: 19
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 22:11:54 on Jan 16,2023, Elapsed time: 3:21:51
+# Errors: 2, Warnings: 1
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd failed with 1 errors.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 3 failed with 4 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+vsim -gui work.tb_rx_synch
+# vsim -gui work.tb_rx_synch 
+# Start time: 22:15:30 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+add wave  \
+sim:/tb_rx_synch/break_status_out_tb \
+sim:/tb_rx_synch/clear_tb \
+sim:/tb_rx_synch/clk_tb \
+sim:/tb_rx_synch/en_tb \
+sim:/tb_rx_synch/end_sim
+add wave  \
+sim:/tb_rx_synch/rst_tb \
+sim:/tb_rx_synch/rx_tb \
+sim:/tb_rx_synch/sampled_out_tb \
+sim:/tb_rx_synch/status_out_tb
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/bit_count
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/break_DUT/status
+run -all
+add wave  \
+sim:/tb_rx_synch/break_status_out_tb
+# Can't move the Now cursor.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+vsim -gui work.tb_rx_synch
+# End time: 22:35:28 on Jan 16,2023, Elapsed time: 0:19:58
+# Errors: 0, Warnings: 5
+# vsim -gui work.tb_rx_synch 
+# Start time: 22:35:28 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_synch(bhv)
+# Loading work.rx_synch(struct)
+# Loading work.break_counter(struct)
+add wave  \
+sim:/tb_rx_synch/status_out_tb
+add wave  \
+sim:/tb_rx_synch/break_status_out_tb
+add wave  \
+sim:/tb_rx_synch/rx_synch_DUT/break_DUT/status
+run -all
