@@ -26,7 +26,7 @@ architecture bhv of tb_break_counter is
         clk   : in std_logic;
         rst   : in std_logic;
         rx    : in std_logic;
-        status  : out std_logic
+        break_error_out  : out std_logic
     );
   end component;
 
@@ -40,7 +40,7 @@ begin
       clk       => clk_tb,
       rst       => rst_tb,
       rx        => rx_tb,
-      status    => out_tb
+      break_error_out    => out_tb
     );
 
   stimuli: process(clk_tb, rst_tb)
@@ -62,23 +62,36 @@ begin
         when 49 => rx_tb  <= '0'; -- w5
         when 57 => rx_tb  <= '0'; -- w6
         when 65 => rx_tb  <= '0'; -- parity bit
-        when 73 => rx_tb  <= '0'; -- stop 1
-        when 81 => rx_tb  <= '0'; -- stop 2
+        when 73 => rx_tb  <= '1'; -- stop 1
+        when 81 => rx_tb  <= '1'; -- stop 2
 
-        when 89  => rx_tb   <= '1'; -- start bit
-        when 97  => rx_tb   <= '1';-- w0
-        when 105 => rx_tb   <= '1';-- w1
-        when 113 => rx_tb   <= '1';-- w2
-        when 121 => rx_tb   <= '1';-- w3
-        when 129 => rx_tb   <= '1';-- w4
-        when 137 => rx_tb   <= '1';-- w5
-        when 145 => rx_tb   <= '1';-- w6
-        when 153 => rx_tb   <= '1';-- parity bit
+        when 89  => rx_tb   <= '0'; -- start bit
+        when 97  => rx_tb   <= '0';-- w0
+        when 105 => rx_tb   <= '0';-- w1
+        when 113 => rx_tb   <= '0';-- w2
+        when 121 => rx_tb   <= '0';-- w3
+        when 129 => rx_tb   <= '0';-- w4
+        when 137 => rx_tb   <= '0';-- w5
+        when 145 => rx_tb   <= '0';-- w6
+        when 153 => rx_tb   <= '0';-- parity bit
         when 161 => rx_tb   <= '0';-- stop 1
         when 169 => rx_tb   <= '0';-- stop 2
 
         when 177 => rx_tb    <= '1';
-        when 180 => end_sim  <= '0';
+
+        when 201 => rx_tb  <= '0'; -- start bit
+        when 209 => rx_tb  <= '1'; -- w0
+        when 217 => rx_tb  <= '0'; -- w1
+        when 225 => rx_tb  <= '1'; -- w2
+        when 233 => rx_tb  <= '0'; -- w3
+        when 241 => rx_tb  <= '1'; -- w4
+        when 249 => rx_tb  <= '0'; -- w5
+        when 257 => rx_tb  <= '1'; -- w6
+        when 265 => rx_tb  <= '0'; -- parity bit
+        when 273 => rx_tb  <= '1'; -- stop 1
+        when 281 => rx_tb  <= '1'; -- stop 2
+
+        when 300 => end_sim  <= '0';
         when others => null;
       end case;
 

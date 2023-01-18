@@ -33,7 +33,6 @@ architecture struct of rx_synch is
         STOP_DETECT_S,
         FRAME_ERROR_S
     );
-
     signal rx_synch_fsm_state : rx_synch_fsm_state_t := RESET_S;
     signal bit_count    : integer range 0 to WORD_SIZE + STOP_BITS + 2 + 1 := 0;
 
@@ -50,6 +49,7 @@ architecture struct of rx_synch is
                 frame_stop_out   <= '0';
                 frame_error_out  <= '0';
                 bit_count    <= 0;
+                count        := 0;
 
             elsif rising_edge(clk) then
                 case rx_synch_fsm_state is
@@ -82,13 +82,10 @@ architecture struct of rx_synch is
                             count := 0;
                             if bit_count < WORD_SIZE then
                                 data_out(bit_count) <= rx;
-                            end if;
-                            bit_count <= bit_count + 1;
-                            -- if bit_count-1 >= 0 and bit_count-1 <= WORD_SIZE + 1 then
-                            -- end if;
-                            if bit_count = WORD_SIZE then
+                            elsif bit_count = WORD_SIZE then
                                 rx_synch_fsm_state <= STOP_DETECT_S;
                             end if;
+                            bit_count <= bit_count + 1;
                         else
                             count := count + 1;
                         end if;

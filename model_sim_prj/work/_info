@@ -10,22 +10,22 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 Ebreak_counter
-Z0 w1673753729
+Z0 w1674002207
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 348
+!i122 411
 Z3 dC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj
 Z4 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd
 Z5 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd
 l0
 L4 1
-VHXBgk>iEPV6cXAREXVhF_1
-!s100 i<_X81kJD?igOGXG`GaVB0
+VS>76?VA6:EKGcB;bT<oFf0
+!s100 8<HBO5kIJJ=jGX_Ae[mkT3
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1673994868
+Z7 !s110 1674002396
 !i10b 1
-Z8 !s108 1673994868.000000
+Z8 !s108 1674002396.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd|
 Z10 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd|
 !i113 1
@@ -34,12 +34,12 @@ Z12 tExplicit 1 CvgOpt 0
 Astruct
 R1
 R2
-DEx4 work 13 break_counter 0 22 HXBgk>iEPV6cXAREXVhF_1
-!i122 348
-l24
-L17 66
-VJ5572=hmKooee7@P8k6G71
-!s100 J`dm;39n]j=d8d[^KM`SS1
+DEx4 work 13 break_counter 0 22 S>76?VA6:EKGcB;bT<oFf0
+!i122 411
+l31
+L17 78
+VCdR00]:S<lJ37NQOLSK8K1
+!s100 V;Wz0hJEziRQX>eGkIbV@1
 R6
 32
 R7
@@ -54,7 +54,7 @@ Edff
 Z13 w1673482768
 R1
 R2
-!i122 352
+!i122 415
 R3
 Z14 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/dff.vhd
 Z15 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/dff.vhd
@@ -64,9 +64,9 @@ V`EbPg31IRU6BeZjWd<4C=0
 !s100 lSDE^S7?4NEEz_Mg:QgbV3
 R6
 32
-Z16 !s110 1673994869
+Z16 !s110 1674002397
 !i10b 1
-Z17 !s108 1673994869.000000
+Z17 !s108 1674002397.000000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/dff.vhd|
 Z19 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/dff.vhd|
 !i113 1
@@ -76,7 +76,7 @@ Astruct
 R1
 R2
 Z20 DEx4 work 3 dff 0 22 `EbPg31IRU6BeZjWd<4C=0
-!i122 352
+!i122 415
 l15
 Z21 L14 15
 Z22 VLm2m`PzHD_[]eVNH4<kJ>0
@@ -95,7 +95,7 @@ Edff_n
 Z24 w1673481894
 R1
 R2
-!i122 346
+!i122 409
 R3
 Z25 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/uart_rx.vhd
 Z26 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/uart_rx.vhd
@@ -117,7 +117,7 @@ Astruct
 R1
 R2
 DEx4 work 5 dff_n 0 22 SYKjV5E]FAM0jTHC?ZH:D2
-!i122 346
+!i122 409
 l18
 L17 15
 VYZ^inolj8<3U4T5]H2;cm0
@@ -133,10 +133,10 @@ R28
 R11
 R12
 Erx_synch
-Z29 w1673994765
+Z29 w1674000844
 R1
 R2
-!i122 347
+!i122 410
 R3
 Z30 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd
 Z31 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd
@@ -158,11 +158,11 @@ Astruct
 R1
 R2
 DEx4 work 8 rx_synch 0 22 75zWz]6gc1mUznZB197R12
-!i122 347
-l40
-L25 97
-VK>K=4L5Q2;93NOBgmb:k@1
-!s100 n1hEUingof^n0@kcV:`J82
+!i122 410
+l39
+L25 94
+VWn<hNXB@004o6SM:7Z^jW0
+!s100 i@V=QL5KWg5`fNPhnRYUR3
 R6
 32
 R7
@@ -174,10 +174,10 @@ R33
 R11
 R12
 Etb_break_counter
-Z34 w1673752994
+Z34 w1674002378
 R1
 R2
-!i122 349
+!i122 412
 R3
 Z35 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd
 Z36 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd
@@ -187,9 +187,9 @@ VnHQz<Ei>LES_TNS@:28aE2
 !s100 1eA^:L7WIoU1?0c51;E8h1
 R6
 32
-R16
+R7
 !i10b 1
-R17
+R8
 Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd|
 Z38 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd|
 !i113 1
@@ -199,16 +199,16 @@ Abhv
 R1
 R2
 DEx4 work 16 tb_break_counter 0 22 nHQz<Ei>LES_TNS@:28aE2
-!i122 349
+!i122 412
 l33
-L8 83
-VdV`8X@9Fm>OPm?VJ02K]G2
-!s100 3HB90:=QHH_n]WRgb1=Li0
+L8 96
+V?Gj5kA5E4idP`CgBZU;Jo2
+!s100 PkQVXmK@PaW?IdCQgX9=P0
 R6
 32
-R16
+R7
 !i10b 1
-R17
+R8
 R37
 R38
 !i113 1
@@ -218,7 +218,7 @@ Etb_rx_synch
 w1673890499
 R1
 R2
-!i122 351
+!i122 414
 R3
 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_multi_frame_rx_synch.vhd
 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_multi_frame_rx_synch.vhd
@@ -240,21 +240,21 @@ Abhv
 R1
 R2
 DEx4 work 11 tb_rx_synch 0 22 b=Kcn:K<z^[NiNHER63do0
-!i122 350
+!i122 413
 l41
 L8 108
-Vk3:1_3mOc`Pg=Ae1ljB]^0
-!s100 hS<>K06llEh1?>VPUM50M1
+VK4K<j7b@QC]konLa^NQk42
+!s100 2e3LfQU955KnaGMHzCo9h1
 R6
 32
-R16
+R7
 !i10b 1
-R17
+R8
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_rx_synch.vhd|
 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_rx_synch.vhd|
 !i113 1
 R11
 R12
 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_rx_synch.vhd
-w1673994860
+w1673995023
 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_rx_synch.vhd

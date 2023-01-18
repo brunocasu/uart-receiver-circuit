@@ -88,7 +88,7 @@ begin
         when 245 => rx_tb   <= '1';-- w6
         when 253 => rx_tb   <= '0';-- parity bit
         when 261 => rx_tb   <= '1';-- stop 1 !!!FRAME ERROR!!!
-        when 269 => rx_tb   <= '0';-- stop 2
+        when 269 => rx_tb   <= '1';-- stop 2
 
         -- when 277 => rx_tb    <= '1';
 

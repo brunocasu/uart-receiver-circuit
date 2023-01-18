@@ -10,75 +10,87 @@ entity break_counter is
         clk   : in std_logic;
         rst   : in std_logic;
         rx    : in std_logic;
-        status  : out std_logic
+        break_error_out  : out std_logic
     );
 end entity;
 
 architecture struct of break_counter is
 
-    signal clk_count    : integer range 0 to OS_RATE := 0;
-    signal start_count  : integer range 0 to OS_RATE/2 := 0;
+    type break_counter_fsm_state_t is
+    (
+        RESET_S,
+        AUTO_RESET_S,
+        IDLE_S,
+        START_DETECT_S,
+        RECEIVE_DATA_S,
+        BREAK_ERROR_S
+    );
+    signal break_counter_fsm_state : break_counter_fsm_state_t := RESET_S;
     signal bit_count    : integer range 0 to BREAK_COUNT + 1 := 0;
-    signal idle_flag    : std_logic := '1';
 
-begin
-    p_break_counter : process(clk, rst)
     begin
-        if rst = '0' then -- reset active low
-            status       <= '0';
-            clk_count    <= 0;
-            bit_count    <= 0;
 
-        elsif rising_edge(clk) then
-            -- rx sampling
-            if bit_count > 0 and bit_count <= BREAK_COUNT + 1 then
-                clk_count <= clk_count + 1;
-                if clk_count = OS_RATE - 1 then
-                    clk_count <= 0;
-                    if rx = '0' then
-                        if  bit_count = BREAK_COUNT then
-                            -- bit_count <= 0;
-                            bit_count <= bit_count + 1;
-                        elsif bit_count = BREAK_COUNT + 1 then
-                            bit_count <= 2; -- start bit received again
-                            status <= '0';
-                        else
-                            bit_count <= bit_count + 1;
+        p_break_counter : process(clk, rst)
+        variable count : integer := 0;
+        begin
+            if rst = '0' then -- reset active low
+                break_error_out       <= '0';
+                break_counter_fsm_state  <= RESET_S;
+                bit_count   <= 0;
+                count       := 0;
+
+            elsif rising_edge(clk) then
+                case break_counter_fsm_state is
+                    when RESET_S =>
+                            if rx = '1' then
+                                break_counter_fsm_state <= IDLE_S;
+                            end if;
+                    when AUTO_RESET_S =>
+                            if rx = '1' then
+                                break_counter_fsm_state <= IDLE_S;
+                            end if;
+                    when IDLE_S =>
+                        break_error_out <= '0';
+                        if rx = '0' then
+                            break_counter_fsm_state <= START_DETECT_S;
+                            count := 1;
                         end if;
-                    else
-                        bit_count <= 0;
-                        status <= '0';
-                        idle_flag <= '1'; -- re entereed idle state
-                    end if;
-                end if;
+                    when START_DETECT_S =>
+                        if count = (OS_RATE/2) - 1 then
+                            if rx = '0' then
+                                break_counter_fsm_state <= RECEIVE_DATA_S;
+                                bit_count <= 1; -- start bit is counted
+                                count := 0;
+                            else
+                                break_counter_fsm_state <= IDLE_S;
+                            end if;
+                        else
+                            count := count + 1;
+                        end if;
+                    when RECEIVE_DATA_S =>
+                        if count = OS_RATE - 1 then
+                            count := 0;
+                            if rx = '0' then
+                                if bit_count = BREAK_COUNT - 2 then
+                                    bit_count <= 0;
+                                    break_counter_fsm_state <= BREAK_ERROR_S;
+                                else
+                                    bit_count <= bit_count + 1;
+                                end if;
+                            else
+                                bit_count <= 0;
+                                break_counter_fsm_state <= IDLE_S;
+                            end if;
+                        else
+                            count := count + 1;
+                        end if;
+                    when BREAK_ERROR_S =>
+                        break_error_out <= '1';
+                        break_counter_fsm_state <= AUTO_RESET_S; -- auto reset
+                    when others => null;
+                end case;
             end if;
-
-            -- UART start synchronization
-            if (rx = '0' and start_count = 0 and idle_flag = '1') then
-                start_count <= start_count + 1;
-                status <= '0';
-            end if;
-
-            -- UART start bit detection
-            if (start_count > 0 and idle_flag = '1') then
-                start_count <= start_count + 1;
-                -- first zero check
-                if start_count = (OS_RATE/2)-1 then
-                    start_count <= 0;
-                    if rx = '0' then
-                        bit_count <= 1;
-                        idle_flag <= '0'; -- exited idle state
-                    end if;
-                end if;
-            end if;
-
-            -- BREAK detection
-            if  bit_count = BREAK_COUNT then
-                status <= '1';
-            end if;
-        end if;
-    end process;
-
+        end process;
 end architecture;
 
 

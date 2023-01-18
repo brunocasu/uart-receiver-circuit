@@ -1360,3 +1360,133 @@ restart
 # Loading work.tb_rx_synch(bhv)
 # Loading work.rx_synch(struct)
 run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+# Load canceled
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd failed with 30 errors.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 3 failed with 33 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd failed with 6 errors.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 3 failed with 9 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd failed with 2 errors.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 3 failed with 5 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+vsim -gui work.tb_break_counter
+# End time: 01:15:40 on Jan 18,2023, Elapsed time: 2:28:52
+# Errors: 0, Warnings: 6
+# vsim -gui work.tb_break_counter 
+# Start time: 01:15:40 on Jan 18,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+add wave  \
+sim:/tb_break_counter/clk_tb \
+sim:/tb_break_counter/end_sim \
+sim:/tb_break_counter/out_tb \
+sim:/tb_break_counter/rst_tb \
+sim:/tb_break_counter/rx_tb
+run -all
+add wave  \
+sim:/tb_break_counter/break_counter_DUT/break_counter_fsm_state
+restart
+run -all
+add wave  \
+sim:/tb_break_counter/break_counter_DUT/bit_count
+run -all
+restart
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+run -all
+restart
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+run -all
