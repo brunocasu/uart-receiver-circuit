@@ -50,10 +50,6 @@ begin
       en        => en_tb,
       rx        => rx_tb,
       data_out      => data_out_tb
-      --data_ready_out
-      --frame_start_out
-      --frame_stop_out
-      --frame_error_out
     );
 
   stimuli: process(clk_tb, rst_tb)

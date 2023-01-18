@@ -1490,3 +1490,167 @@ restart
 # Loading work.tb_break_counter(bhv)
 # Loading work.break_counter(struct)
 run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 28 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# 7 compiles, 2 failed with 30 errors.
+# Compile of rx_buffer.vhd failed with 20 errors.
+# Compile of rx_buffer.vhd failed with 19 errors.
+# Compile of rx_buffer.vhd failed with 7 errors.
+# Compile of rx_buffer.vhd failed with 4 errors.
+# Compile of rx_buffer.vhd was successful.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd failed with 1 errors.
+# 8 compiles, 2 failed with 3 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# 8 compiles, 1 failed with 2 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd failed with 18 errors.
+# 9 compiles, 2 failed with 20 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd failed with 5 errors.
+# 9 compiles, 2 failed with 7 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd failed with 2 errors.
+# 9 compiles, 2 failed with 4 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# 9 compiles, 1 failed with 2 errors.
+vsim -gui work.tb_rx_buff
+# End time: 03:28:14 on Jan 18,2023, Elapsed time: 2:12:34
+# Errors: 0, Warnings: 16
+# vsim -gui work.tb_rx_buff 
+# Start time: 03:28:14 on Jan 18,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_buff(bhv)
+# Loading work.rx_buff(struct)
+add wave  \
+sim:/tb_rx_buff/rx_buff_DUT/buff_clear_in \
+sim:/tb_rx_buff/rx_buff_DUT/clk \
+sim:/tb_rx_buff/rx_buff_DUT/data_buffer \
+sim:/tb_rx_buff/rx_buff_DUT/data_in \
+sim:/tb_rx_buff/rx_buff_DUT/data_ready_in \
+sim:/tb_rx_buff/rx_buff_DUT/en \
+sim:/tb_rx_buff/rx_buff_DUT/parity_error_out \
+sim:/tb_rx_buff/rx_buff_DUT/rst \
+sim:/tb_rx_buff/rx_buff_DUT/rx_buff_fsm_state \
+sim:/tb_rx_buff/rx_buff_DUT/xor_in \
+sim:/tb_rx_buff/rx_buff_DUT/xor_out \
+sim:/tb_rx_buff/rx_buff_DUT/y_out
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd failed with 1 errors.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd failed with 3 errors.
+# 9 compiles, 3 failed with 6 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd failed with 1 errors.
+# 9 compiles, 2 failed with 3 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# 9 compiles, 1 failed with 2 errors.
+vsim -gui work.tb_rx_buff
+# End time: 05:04:45 on Jan 18,2023, Elapsed time: 1:36:31
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_rx_buff 
+# Start time: 05:04:45 on Jan 18,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_buff(bhv)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+add wave  \
+sim:/tb_rx_buff/clear_buff_tb \
+sim:/tb_rx_buff/clk_tb \
+sim:/tb_rx_buff/data_in_tb \
+sim:/tb_rx_buff/data_ready_tb \
+sim:/tb_rx_buff/en_tb \
+sim:/tb_rx_buff/end_sim \
+sim:/tb_rx_buff/rst_tb
+add wave  \
+sim:/tb_rx_buff/rx_buff_DUT/y_out
+add wave  \
+sim:/tb_rx_buff/rx_buff_DUT/rx_buff_fsm_state
+run -all
+add wave  \
+sim:/tb_rx_buff/rx_buff_DUT/xor_DUT/A \
+sim:/tb_rx_buff/rx_buff_DUT/xor_DUT/X
+restart
+run -all
+add wave  \
+sim:/tb_rx_buff/rx_buff_DUT/xor_in
+restart
+run -all
+add wave  \
+sim:/tb_rx_buff/rx_buff_DUT/parity_error_out
+# Compile of break_counter.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
