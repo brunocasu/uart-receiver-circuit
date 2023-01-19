@@ -9,6 +9,7 @@ entity break_counter is
     port (
         clk   : in std_logic;
         rst   : in std_logic;
+        en    : in std_logic;
         rx    : in std_logic;
         break_error_out  : out std_logic
     );
@@ -26,7 +27,7 @@ architecture struct of break_counter is
         BREAK_ERROR_S
     );
     signal break_counter_fsm_state : break_counter_fsm_state_t := RESET_S;
-    signal bit_count    : integer range 0 to BREAK_COUNT + 1 := 0;
+    signal bit_count    : integer range 0 to BREAK_COUNT := 0;
 
     begin
 
@@ -40,55 +41,61 @@ architecture struct of break_counter is
                 count       := 0;
 
             elsif rising_edge(clk) then
-                case break_counter_fsm_state is
-                    when RESET_S =>
+                if en = '1' then
+                    case break_counter_fsm_state is
+                        when RESET_S =>
+                            break_error_out       <= '0';
+                            break_counter_fsm_state  <= RESET_S;
+                            bit_count   <= 0;
+                            count       := 0;
                             if rx = '1' then
                                 break_counter_fsm_state <= IDLE_S;
                             end if;
-                    when AUTO_RESET_S =>
-                            if rx = '1' then
-                                break_counter_fsm_state <= IDLE_S;
-                            end if;
-                    when IDLE_S =>
-                        break_error_out <= '0';
-                        if rx = '0' then
-                            break_counter_fsm_state <= START_DETECT_S;
-                            count := 1;
-                        end if;
-                    when START_DETECT_S =>
-                        if count = (OS_RATE/2) - 1 then
+                        when AUTO_RESET_S =>
+                                if rx = '1' then
+                                    break_counter_fsm_state <= IDLE_S;
+                                end if;
+                        when IDLE_S =>
+                            break_error_out <= '0';
                             if rx = '0' then
-                                break_counter_fsm_state <= RECEIVE_DATA_S;
-                                bit_count <= 1; -- start bit is counted
-                                count := 0;
-                            else
-                                break_counter_fsm_state <= IDLE_S;
+                                break_counter_fsm_state <= START_DETECT_S;
+                                count := 1;
                             end if;
-                        else
-                            count := count + 1;
-                        end if;
-                    when RECEIVE_DATA_S =>
-                        if count = OS_RATE - 1 then
-                            count := 0;
-                            if rx = '0' then
-                                if bit_count = BREAK_COUNT - 2 then
-                                    bit_count <= 0;
-                                    break_counter_fsm_state <= BREAK_ERROR_S;
+                        when START_DETECT_S =>
+                            if count = (OS_RATE/2) - 1 then
+                                if rx = '0' then
+                                    break_counter_fsm_state <= RECEIVE_DATA_S;
+                                    bit_count <= 1; -- start bit is counted
+                                    count := 0;
                                 else
-                                    bit_count <= bit_count + 1;
+                                    break_counter_fsm_state <= IDLE_S;
                                 end if;
                             else
-                                bit_count <= 0;
-                                break_counter_fsm_state <= IDLE_S;
+                                count := count + 1;
                             end if;
-                        else
-                            count := count + 1;
-                        end if;
-                    when BREAK_ERROR_S =>
-                        break_error_out <= '1';
-                        break_counter_fsm_state <= AUTO_RESET_S; -- auto reset
-                    when others => null;
-                end case;
+                        when RECEIVE_DATA_S =>
+                            if count = OS_RATE - 1 then
+                                count := 0;
+                                if rx = '0' then
+                                    if bit_count = BREAK_COUNT - 2 then
+                                        bit_count <= 0;
+                                        break_counter_fsm_state <= BREAK_ERROR_S;
+                                    else
+                                        bit_count <= bit_count + 1;
+                                    end if;
+                                else
+                                    bit_count <= 0;
+                                    break_counter_fsm_state <= IDLE_S;
+                                end if;
+                            else
+                                count := count + 1;
+                            end if;
+                        when BREAK_ERROR_S =>
+                            break_error_out <= '1';
+                            break_counter_fsm_state <= AUTO_RESET_S; -- auto reset
+                        when others => null;
+                    end case;
+                end if;
             end if;
         end process;
 end architecture;

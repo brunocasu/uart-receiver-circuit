@@ -67,15 +67,25 @@ begin
       case(test_counter) is
         when 5  => data_in_tb  <= "01010101";
         when 6  => data_ready_tb <= '1';
+        when 7  => data_ready_tb <= '0';
         when 10 => data_ready_tb <= '0'; clear_buff_tb <= '1';
-        when 11 => clear_buff_tb <= '0';
+        when 12 => clear_buff_tb <= '0';
 
-        when 15 => data_in_tb  <= "00010000";
+        when 15 => data_in_tb  <= "00010000"; -- parity error
         when 16 => data_ready_tb <= '1';
-        when 20 => data_ready_tb <= '0'; clear_buff_tb <= '1';
-        when 21 => clear_buff_tb <= '0';
+        when 17  => data_ready_tb <= '0';
+        when 23 => data_ready_tb <= '0';
+        when 27 => clear_buff_tb <= '1';
+        when 28 => clear_buff_tb <= '0';
 
-        when 25 => end_sim  <= '0';
+        when 35  => data_in_tb  <= "11000011";
+        when 36  => data_ready_tb <= '1';
+        when 37  => data_ready_tb <= '0';
+        when 40 => data_ready_tb <= '0';
+        when 50 => clear_buff_tb <= '1';
+        when 51 => clear_buff_tb <= '0';
+
+        when 55 => end_sim  <= '0';
         when others => null;
       end case;
 

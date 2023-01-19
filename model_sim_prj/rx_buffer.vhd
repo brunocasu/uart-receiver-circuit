@@ -49,8 +49,6 @@ architecture struct of rx_buff is
             X => xor_out
             );
 
-        xor_in <= data_in;
-
         p_rx_synch_fsm : process(clk, rst)
         begin
             if rst = '0' then -- reset active low
@@ -64,6 +62,10 @@ architecture struct of rx_buff is
                 if en = '1' then
                     case rx_buff_fsm_state is
                         when RESET_S =>
+                            data_buffer <= (others => '0');
+                            y_out       <= (others => '0');
+                            parity_error_out  <= '0';
+                            xor_in <= (others => '0');
                             if data_ready_in = '0' then
                                 rx_buff_fsm_state <= WAIT_DATA_S;
                             end if;
@@ -73,6 +75,7 @@ architecture struct of rx_buff is
                                 rx_buff_fsm_state <= COPY_DATA_S;
                             end if;
                         when COPY_DATA_S =>
+                            xor_in <= data_in;
                             data_buffer <= data_in;
                             rx_buff_fsm_state <= OUTPUT_S;
 

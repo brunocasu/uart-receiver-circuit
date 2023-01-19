@@ -30,7 +30,9 @@ architecture struct of rx_synch is
         IDLE_S,
         START_DETECT_S,
         RECEIVE_DATA_S,
+        DATA_READY_S,
         STOP_DETECT_S,
+        FRAME_END_S,
         FRAME_ERROR_S
     );
     signal rx_synch_fsm_state : rx_synch_fsm_state_t := RESET_S;
@@ -54,18 +56,25 @@ architecture struct of rx_synch is
             elsif rising_edge(clk) then
                 case rx_synch_fsm_state is
                     when RESET_S =>
+                        data_out <= (others => '0');
+                        data_ready_out   <= '0';
+                        frame_start_out  <= '0';
+                        frame_stop_out   <= '0';
+                        frame_error_out  <= '0';
+                        bit_count    <= 0;
+                        count        := 0;
                         if rx = '1' then
                             rx_synch_fsm_state <= IDLE_S;
                         end if;
                     when IDLE_S =>
-                        data_ready_out <= '0';
-                        frame_stop_out <= '1';
+                        -- data_ready_out <= '0';
+                        frame_stop_out <= '0';
                         if rx = '0' then
                             rx_synch_fsm_state <= START_DETECT_S;
                             count := 1;
                         end if;
                     when START_DETECT_S =>
-                        frame_stop_out <= '0';
+                        -- frame_stop_out <= '0';
                         if count = (OS_RATE/2) - 1 then
                             if rx = '0' then
                                 rx_synch_fsm_state <= RECEIVE_DATA_S;
@@ -83,21 +92,26 @@ architecture struct of rx_synch is
                             if bit_count < WORD_SIZE then
                                 data_out(bit_count) <= rx;
                             elsif bit_count = WORD_SIZE then
-                                rx_synch_fsm_state <= STOP_DETECT_S;
+                                rx_synch_fsm_state <= DATA_READY_S;
                             end if;
                             bit_count <= bit_count + 1;
                         else
                             count := count + 1;
                         end if;
-                    when STOP_DETECT_S =>
-                        frame_start_out <= '0';
+                    when DATA_READY_S =>
+                        count := count + 1; -- must keep the counter updated (data is ready while the stop bit is being counted)
                         data_ready_out <= '1';
+                        frame_start_out <= '0';
+                        rx_synch_fsm_state <= STOP_DETECT_S;
+
+                    when STOP_DETECT_S =>
                         count := count + 1;
+                        data_ready_out <= '0';
                         if count = OS_RATE then
                             count := 0;
                             if rx = '1' then
                                 if bit_count = WORD_SIZE + STOP_BITS then
-                                    rx_synch_fsm_state <= IDLE_S;
+                                    rx_synch_fsm_state <= FRAME_END_S;
                                     bit_count  <= 0;
                                     data_out <= (others => '0');
                                 else
@@ -107,6 +121,9 @@ architecture struct of rx_synch is
                                 rx_synch_fsm_state <= FRAME_ERROR_S;
                             end if;
                         end if;
+                    when FRAME_END_S =>
+                        frame_stop_out <= '1';
+                        rx_synch_fsm_state <= IDLE_S;
                     when FRAME_ERROR_S =>
                         data_ready_out <= '0';
                         frame_error_out <= '1';

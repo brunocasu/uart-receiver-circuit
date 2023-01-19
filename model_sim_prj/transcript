@@ -1654,3 +1654,214 @@ sim:/tb_rx_buff/rx_buff_DUT/parity_error_out
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# 9 compiles, 1 failed with 2 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_buff(bhv)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# 9 compiles, 1 failed with 2 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_buff(bhv)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# 9 compiles, 1 failed with 2 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_buff(bhv)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# 9 compiles, 1 failed with 2 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_buff(bhv)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd failed with 3 errors.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# 9 compiles, 2 failed with 5 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of tb_multi_frame_rx_synch.vhd failed with 2 errors.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# 9 compiles, 1 failed with 2 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_buff(bhv)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd failed with 48 errors.
+# 9 compiles, 1 failed with 48 errors.
+# Compile of rx_control.vhd failed with 37 errors.
+# Compile of rx_control.vhd was successful.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd failed with 6 errors.
+# 10 compiles, 1 failed with 6 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd failed with 2 errors.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb_rx_control
+# End time: 05:31:54 on Jan 19,2023, Elapsed time: 24:27:09
+# Errors: 0, Warnings: 12
+# vsim -gui work.tb_rx_control 
+# Start time: 05:31:54 on Jan 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_control(bhv)
+# Loading work.rx_control(struct)
+vsim -gui work.tb_rx_control
+# End time: 05:32:14 on Jan 19,2023, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_rx_control 
+# Start time: 05:32:14 on Jan 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_rx_control(bhv)
+# Loading work.rx_control(struct)
+add wave  \
+sim:/tb_rx_control/break_tb \
+sim:/tb_rx_control/clk_tb \
+sim:/tb_rx_control/end_sim \
+sim:/tb_rx_control/frame_error_tb \
+sim:/tb_rx_control/frame_start_tb \
+sim:/tb_rx_control/frame_stop_tb \
+sim:/tb_rx_control/parity_error_tb
+add wave  \
+sim:/tb_rx_control/rst_tb \
+sim:/tb_rx_control/rx_tb
+add wave  \
+sim:/tb_rx_control/rx_control_DUT/buff_clear_out \
+sim:/tb_rx_control/rx_control_DUT/buff_enable_out \
+sim:/tb_rx_control/rx_control_DUT/buff_reset_out \
+sim:/tb_rx_control/rx_control_DUT/rx_control_fsm_state \
+sim:/tb_rx_control/rx_control_DUT/synch_enable_out \
+sim:/tb_rx_control/rx_control_DUT/synch_reset_out \
+sim:/tb_rx_control/rx_control_DUT/y_valid_out
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_rx_control(bhv)
+# Loading work.rx_control(struct)
+run -all
