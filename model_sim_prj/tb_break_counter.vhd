@@ -26,6 +26,7 @@ architecture bhv of tb_break_counter is
         clk   : in std_logic;
         rst   : in std_logic;
         rx    : in std_logic;
+        en    : in std_logic;
         break_error_out  : out std_logic
     );
   end component;
@@ -40,6 +41,7 @@ begin
       clk       => clk_tb,
       rst       => rst_tb,
       rx        => rx_tb,
+      en        => '1',
       break_error_out    => out_tb
     );
 

@@ -6,14 +6,13 @@ entity rx_synch is
         OS_RATE     : natural := 8; -- clock over sampling rate (UART bit rate B = 115200)
         WORD_SIZE   : natural := 7; -- UART word size (W = 7) - does not count the parity bit
         STOP_BITS   : natural := 2 -- number of expected stop bits (S = 2)
-        -- BREAK_COUNT : natural := 11 -- number of consecutive '0's to detect a BREAK
     );
     port (
         clk   : in std_logic;
         rst   : in std_logic;
         en    : in std_logic;
         rx    : in std_logic;
-        data_out    : out std_logic_vector(WORD_SIZE downto 0); -- parallel output includes parity bit
+        shift_reg_out   : out std_logic_vector(WORD_SIZE downto 0); -- parallel output includes parity bit
         data_ready_out  : out std_logic;
         frame_start_out : out std_logic;
         frame_stop_out  : out std_logic;
@@ -45,7 +44,7 @@ architecture struct of rx_synch is
         begin
             if rst = '0' then -- reset active low
                 rx_synch_fsm_state <= RESET_S;
-                data_out <= (others => '0');
+                shift_reg_out <= (others => '0');
                 data_ready_out   <= '0';
                 frame_start_out  <= '0';
                 frame_stop_out   <= '0';
@@ -56,7 +55,7 @@ architecture struct of rx_synch is
             elsif rising_edge(clk) then
                 case rx_synch_fsm_state is
                     when RESET_S =>
-                        data_out <= (others => '0');
+                        shift_reg_out <= (others => '0');
                         data_ready_out   <= '0';
                         frame_start_out  <= '0';
                         frame_stop_out   <= '0';
@@ -89,10 +88,11 @@ architecture struct of rx_synch is
                         frame_start_out <= '1';
                         if count = OS_RATE - 1 then
                             count := 0;
-                            if bit_count < WORD_SIZE then
-                                data_out(bit_count) <= rx;
-                            elsif bit_count = WORD_SIZE then
-                                rx_synch_fsm_state <= DATA_READY_S;
+                            if bit_count <= WORD_SIZE then
+                                shift_reg_out(bit_count) <= rx;
+                                if bit_count = WORD_SIZE then
+                                    rx_synch_fsm_state <= DATA_READY_S;
+                                end if;
                             end if;
                             bit_count <= bit_count + 1;
                         else
@@ -113,7 +113,7 @@ architecture struct of rx_synch is
                                 if bit_count = WORD_SIZE + STOP_BITS then
                                     rx_synch_fsm_state <= FRAME_END_S;
                                     bit_count  <= 0;
-                                    data_out <= (others => '0');
+                                    shift_reg_out <= (others => '0');
                                 else
                                     bit_count <= bit_count + 1;
                                 end if;

@@ -1,4 +1,12 @@
-C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_control.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_control.vhd
+C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rx_synch
+-- Compiling architecture struct of rx_synch
+
+} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_control.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_control.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -6,13 +14,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity rx_control
 -- Compiling architecture struct of rx_control
 
-} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_synch.vhd
+} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_rx_control.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_rx_control.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity rx_synch
--- Compiling architecture struct of rx_synch
+-- Compiling entity tb_rx_control
+-- Compiling architecture bhv of tb_rx_control
 
 } {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_buffer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_buffer.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -38,6 +46,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity break_counter
 -- Compiling architecture struct of break_counter
 
+} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/uart_rx.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/uart_rx.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity uart_rx
+-- Compiling architecture struct of uart_rx
+
+} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_break_counter
+-- Compiling architecture bhv of tb_break_counter
+
 } {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_rx_buff.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_rx_buff.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -53,21 +77,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity xor_8_b
 -- Compiling architecture behavioral of xor_8_b
-
-} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/tb_break_counter.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_break_counter
--- Compiling architecture bhv of tb_break_counter
-
-} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/uart_rx.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/uart_rx.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity DFF_N
--- Compiling architecture struct of DFF_N
 
 } {} {}}

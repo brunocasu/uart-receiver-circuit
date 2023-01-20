@@ -9,7 +9,7 @@ entity rx_control is
         frame_start    : in std_logic;
         frame_stop     : in std_logic;
         frame_error    : in std_logic;
-        break          : in std_logic;
+        break_error    : in std_logic;
         parity_error   : in std_logic;
         y_valid_out       : out std_logic;
         synch_enable_out  : out std_logic;
@@ -44,9 +44,9 @@ architecture struct of rx_control is
             if rst = '0' then -- reset active low
                 rx_control_fsm_state <= RESET_S;
                 y_valid_out      <= '0';
-                synch_enable_out <= '0';
+                synch_enable_out <= '1';
                 synch_reset_out  <= '0';
-                buff_enable_out  <= '0';
+                buff_enable_out  <= '1';
                 buff_reset_out   <= '0';
                 buff_clear_out   <= '0';
 
@@ -54,9 +54,9 @@ architecture struct of rx_control is
                 case rx_control_fsm_state is
                     when RESET_S =>
                         y_valid_out      <= '0';
-                        synch_enable_out <= '0';
+                        -- synch_enable_out <= '0';
                         synch_reset_out  <= '0';
-                        buff_enable_out  <= '0';
+                        -- buff_enable_out  <= '0';
                         buff_reset_out   <= '0';
                         buff_clear_out   <= '0';
                         if rx = '1' then
@@ -69,15 +69,15 @@ architecture struct of rx_control is
                         buff_clear_out   <= '0';
                         if rx = '1' then
                             rx_control_fsm_state <= IDLE_S;
-                        elsif break = '1' then
+                        elsif break_error = '1' then
                             rx_control_fsm_state <= BREAK_ERROR_S;
                         end if;
 
                     when IDLE_S =>
                         y_valid_out      <= '0';
-                        synch_enable_out <= '1';
+                        -- synch_enable_out <= '1';
                         synch_reset_out  <= '1';
-                        buff_enable_out  <= '1';
+                        -- buff_enable_out  <= '1';
                         buff_reset_out   <= '1';
                         buff_clear_out   <= '0';
                         if frame_start = '1' then

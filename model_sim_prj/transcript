@@ -1865,3 +1865,2227 @@ restart
 # Loading work.tb_rx_control(bhv)
 # Loading work.rx_control(struct)
 run -all
+# Compile of uart_rx.vhd failed with 4 errors.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# 10 compiles, 1 failed with 4 errors.
+# Compile of uart_rx.vhd failed with 3 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd failed with 9 errors.
+# 11 compiles, 1 failed with 9 errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_break_counter
+# End time: 01:53:26 on Jan 20,2023, Elapsed time: 20:21:12
+# Errors: 0, Warnings: 7
+# vsim -gui work.tb_break_counter 
+# Start time: 01:53:27 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_break_counter(bhv)
+# Loading work.break_counter(struct)
+# ** Fatal: (vsim-3817) Port "en" of entity "break_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_break_counter/break_counter_DUT File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/break_counter.vhd Line: 12
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 01:53:27 on Jan 20,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd failed with 1 errors.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.rx_synch
+# vsim -gui work.rx_synch 
+# Start time: 01:55:32 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.rx_synch(struct)
+# Compile of tb_uart_rx.vhd was successful.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_uart_rx
+# End time: 01:56:46 on Jan 20,2023, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 5
+# vsim -gui work.tb_uart_rx 
+# Start time: 01:56:46 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# ** Fatal: (vsim-3817) Port "break_error" of entity "rx_control" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_uart_rx/uart_rx_DUT/control_DUT File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_control.vhd Line: 12
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 01:56:46 on Jan 20,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of uart_rx.vhd failed with 1 errors.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_uart_rx
+# vsim -gui work.tb_uart_rx 
+# Start time: 01:59:03 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# ** Fatal: (vsim-3348) Port length (7) does not match actual length (8) for port "/tb_uart_rx/uart_rx_DUT/buff_DUT/y_out".
+#    Time: 0 ps  Iteration: 0  Instance: /tb_uart_rx/uart_rx_DUT/buff_DUT File: C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/model_sim_prj/rx_buffer.vhd Line: 16
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 01:59:04 on Jan 20,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_uart_rx
+# vsim -gui work.tb_uart_rx 
+# Start time: 02:00:01 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+add wave  \
+sim:/tb_uart_rx/clk_tb \
+sim:/tb_uart_rx/end_sim \
+sim:/tb_uart_rx/rst_tb \
+sim:/tb_uart_rx/rx_tb \
+sim:/tb_uart_rx/y_tb \
+sim:/tb_uart_rx/y_valid_tb
+run -all
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 0  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 1  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 2  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 3  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 4  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 5  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 6  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 7  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 8  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 9  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 10  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 11  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 12  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 13  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 14  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 15  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 16  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 17  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 18  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 19  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 20  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 21  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 22  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 23  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 24  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 25  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 26  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 27  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 28  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 29  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 30  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 31  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 32  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 33  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 34  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 35  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 36  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 37  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 38  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 39  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 40  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 41  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 42  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 43  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 44  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 45  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 46  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 47  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 48  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 49  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 50  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 51  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 52  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 53  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 54  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 55  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 56  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 57  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 58  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 59  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 60  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 61  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 62  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 63  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 64  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 65  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 66  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 67  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 68  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 69  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 70  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 71  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 72  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 73  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 74  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 75  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 76  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 77  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 78  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 79  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 80  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 81  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 82  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 83  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 84  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 85  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 86  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 87  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 88  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 89  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 90  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 91  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 92  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 93  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 94  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 95  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 96  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 97  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 98  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 99  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 100  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 101  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 102  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 103  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 104  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 105  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 106  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 107  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 108  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 109  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 110  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 111  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 112  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 113  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 114  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 115  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 116  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 117  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 118  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 119  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 120  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 121  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 122  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 123  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 124  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 125  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 126  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 127  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 128  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 129  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 130  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 131  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 132  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 133  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 134  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 135  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 136  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 137  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 138  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 139  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 140  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 141  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 142  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 143  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 144  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 145  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 146  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 147  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 148  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 149  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 150  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 151  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 152  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 153  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 154  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 155  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 156  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 157  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 158  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 159  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 160  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 161  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 162  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 163  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 164  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 165  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 166  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 167  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 168  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 169  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 170  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 171  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 172  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 173  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 174  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 175  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 176  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 177  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 178  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 179  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 180  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 181  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 182  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 183  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 184  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 185  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 186  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 187  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 188  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 189  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 190  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 191  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 192  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 193  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 194  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 195  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 196  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 197  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 198  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 199  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 200  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 201  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 202  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 203  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 204  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 205  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 206  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 207  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 208  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 209  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 210  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 211  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 212  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 213  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 214  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 215  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 216  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 217  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 218  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 219  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 220  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 221  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 222  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 223  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 224  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 225  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 226  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 227  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 228  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 229  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 230  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 231  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 232  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 233  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 234  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 235  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 236  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 237  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 238  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 239  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 240  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 241  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 242  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 243  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 244  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 245  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 246  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 247  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 248  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 249  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 250  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 251  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 252  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 253  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 254  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 255  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 256  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 257  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 258  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 259  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 260  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 261  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 262  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 263  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 264  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 265  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 266  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 267  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 268  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 269  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 270  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 271  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 272  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 273  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 274  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 275  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 276  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 277  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 278  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 279  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 280  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 281  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 282  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 283  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 284  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 285  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 286  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 287  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 288  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 289  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 290  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 291  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 292  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 293  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 294  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 295  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 296  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 297  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 298  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 299  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 300  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 301  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 302  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 303  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 304  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 305  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 306  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 307  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 308  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 309  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 310  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 311  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 312  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 313  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 314  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 315  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 316  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 317  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 318  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 319  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 320  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 321  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 322  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 323  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 324  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 325  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 326  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 327  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 328  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 329  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 330  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 331  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 332  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 333  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 334  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 335  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 336  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 337  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 338  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 339  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 340  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 341  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 342  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 343  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 344  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 345  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 346  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 347  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 348  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 349  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 350  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 351  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 352  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 353  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 354  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 355  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 356  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 357  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 358  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 359  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 360  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 361  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 362  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 363  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 364  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 365  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 366  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 367  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 368  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 369  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 370  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 371  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 372  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 373  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 374  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 375  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 376  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 377  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 378  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 379  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 380  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 381  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 382  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 383  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 384  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 385  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 386  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 387  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 388  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 389  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 390  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 391  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 392  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 393  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 394  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 395  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 396  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 397  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 398  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 399  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 400  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 401  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 402  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 403  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 404  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 405  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 406  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 407  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 408  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 409  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 410  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 411  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 412  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 413  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 414  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 415  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 416  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 417  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 418  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 419  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 420  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 421  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 422  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 423  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 424  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 425  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 426  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 427  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 428  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 429  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 430  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 431  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 432  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 433  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 434  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 435  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 436  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 437  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 438  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 439  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 440  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 441  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 442  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 443  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 444  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 445  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 446  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 447  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 448  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 449  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 450  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 451  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 452  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 453  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 454  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 455  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 456  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 457  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 458  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 459  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 460  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 461  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 462  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 463  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 464  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 465  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 466  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 467  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 468  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 469  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 470  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 471  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 472  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 473  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 474  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 475  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 476  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 477  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 478  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 479  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 480  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 481  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 482  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 483  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 484  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 485  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 486  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 487  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 488  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 489  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 490  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 491  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 492  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 493  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 494  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 495  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 496  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 497  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 498  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 499  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 500  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 501  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 502  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 503  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 504  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 505  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 506  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 507  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 508  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 509  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 510  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 511  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 512  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 513  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 514  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 515  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 516  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 517  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 518  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 519  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 520  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 521  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 522  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 523  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 524  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 525  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 526  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 527  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 528  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 529  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 530  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 531  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 532  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 533  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 534  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 535  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 536  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 537  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 538  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 539  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 540  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 541  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 542  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 543  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 544  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 545  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 546  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 547  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 548  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 549  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 550  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 551  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 552  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 553  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 554  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 555  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 556  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 557  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 558  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 559  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 560  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 561  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 562  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 563  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 564  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 565  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 566  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 567  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 568  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 569  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 570  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 571  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 572  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 573  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 574  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 575  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 576  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 577  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 578  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 579  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 580  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 581  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 582  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 583  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 584  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 585  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 586  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 587  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 588  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 589  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 590  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 591  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 592  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 593  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 594  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 595  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 596  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 597  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 598  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 599  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 600  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 601  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 602  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 603  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 604  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 605  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 606  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 607  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 608  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 609  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 610  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 611  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 612  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 613  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 614  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 615  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 616  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 617  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 618  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 619  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 620  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 621  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 622  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 623  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 624  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 625  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 626  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 627  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 628  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 629  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 630  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 631  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 632  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 633  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 634  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 635  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 636  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 637  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 638  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 639  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 640  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 641  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 642  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 643  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 644  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 645  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 646  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 647  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 648  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 649  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 650  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 651  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 652  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 653  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 654  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 655  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 656  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 657  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 658  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 659  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 660  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 661  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 662  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 663  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 664  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 665  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 666  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 667  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 668  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 669  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 670  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 671  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 672  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 673  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 674  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 675  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 676  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 677  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 678  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 679  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 680  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 681  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 682  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 683  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 684  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 685  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 686  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 687  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 688  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 689  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 690  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 691  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 692  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 693  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 694  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 695  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 696  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 697  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 698  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 699  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 700  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 701  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 702  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 703  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 704  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 705  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 706  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 707  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 708  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 709  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 710  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 711  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 712  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 713  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 714  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 715  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 716  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 717  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 718  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 719  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 720  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 721  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 722  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 723  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 724  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 725  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 726  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 727  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 728  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 729  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 730  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 731  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 732  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 733  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 734  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 735  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 736  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 737  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 738  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 739  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 740  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 741  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 742  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 743  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 744  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 745  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 746  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 747  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 748  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 749  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 750  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 751  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 752  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 753  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 754  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 755  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 756  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 757  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 758  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 759  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 760  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 761  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 762  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 763  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 764  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 765  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 766  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 767  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 768  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 769  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 770  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 771  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 772  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 773  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 774  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 775  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 776  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 777  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 778  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 779  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 780  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 781  Instance: /tb_uart_rx
+# ** Error (suppressible): (vsim-8890) Attempt to schedule an event at time that exceeds the maximum simulation timestep - 9676800000000000000.
+#    Time: 9216000 sec  Iteration: 782  Instance: /tb_uart_rx
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+run -all
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/control_DUT/rx_control_fsm_state
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+run -all
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/synch_DUT/rx_synch_fsm_state
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/buff_DUT/rx_buff_fsm_state
+restart
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+run -all
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/synch_DUT/data_out
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/buff_DUT/data_buffer
+restart
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.tb_uart_rx
+# End time: 02:29:50 on Jan 20,2023, Elapsed time: 0:29:49
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_uart_rx 
+# Start time: 02:29:50 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+source ../simulation-script.tcl
+restart
+source ../simulation-script.tcl
+source ../../simulation-script.tcl
+# couldn't read file "../../simulation-script.tcl": no such file or directory
+source ../simulation-script.tcl
+restart -force
+source ../simulation-script.tcl
+# End time: 02:39:53 on Jan 20,2023, Elapsed time: 0:10:03
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 02:39:53 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+add wave  \
+sim:/tb_uart_rx/clk_tb \
+sim:/tb_uart_rx/end_sim \
+sim:/tb_uart_rx/rst_tb \
+sim:/tb_uart_rx/rx_tb \
+sim:/tb_uart_rx/y_tb \
+sim:/tb_uart_rx/y_valid_tb
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/control_DUT/rx_control_fsm_state
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/synch_DUT/bit_count
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/buff_DUT/data_buffer
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/buff_DUT/rx_buff_fsm_state
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/synch_DUT/shift_reg_out
+add wave  \
+sim:/tb_uart_rx/uart_rx_DUT/synch_DUT/rx_synch_fsm_state
+run -all
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+source ../simulation-script.tcl
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# End time: 02:50:28 on Jan 20,2023, Elapsed time: 0:10:35
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 02:50:28 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+source ../simulation-script.tcl
+# End time: 02:58:52 on Jan 20,2023, Elapsed time: 0:08:24
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 02:58:52 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+source ../simulation-script.tcl
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# End time: 03:05:21 on Jan 20,2023, Elapsed time: 0:06:29
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 03:05:21 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+source ../simulation-script.tcl
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# End time: 03:07:29 on Jan 20,2023, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 03:07:29 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+source ../simulation-script.tcl
+# End time: 04:21:27 on Jan 20,2023, Elapsed time: 1:13:58
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 04:21:27 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd failed with 1 errors.
+# 11 compiles, 1 failed with 1 error.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+source ../simulation-script.tcl
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# End time: 04:23:31 on Jan 20,2023, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 04:23:31 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+source ../simulation-script.tcl
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# End time: 04:33:42 on Jan 20,2023, Elapsed time: 0:10:11
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 04:33:42 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+source ../simulation-script.tcl
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# End time: 04:37:13 on Jan 20,2023, Elapsed time: 0:03:31
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 04:37:13 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+# Compile of uart_rx.vhd was successful.
+# Compile of rx_synch.vhd was successful.
+# Compile of break_counter.vhd was successful.
+# Compile of rx_buffer.vhd was successful.
+# Compile of tb_break_counter.vhd was successful.
+# Compile of tb_rx_synch.vhd was successful.
+# Compile of xor_8_b.vhd was successful.
+# Compile of tb_rx_buff.vhd was successful.
+# Compile of rx_control.vhd was successful.
+# Compile of tb_rx_control.vhd was successful.
+# Compile of tb_uart_rx.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+source ../simulation-script.tcl
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
+# End time: 04:41:38 on Jan 20,2023, Elapsed time: 0:04:25
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_uart_rx 
+# Start time: 04:41:38 on Jan 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_uart_rx(bhv)
+# Loading work.uart_rx(struct)
+# Loading work.rx_control(struct)
+# Loading work.rx_synch(struct)
+# Loading work.rx_buff(struct)
+# Loading work.xor_8_b(behavioral)
+# Loading work.break_counter(struct)
