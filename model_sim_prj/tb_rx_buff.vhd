@@ -31,7 +31,7 @@ architecture bhv of tb_rx_buff is
         data_in         : in std_logic_vector(WORD_SIZE downto 0);
         data_ready_in   : in std_logic;
         buff_clear_in   : in std_logic;
-        y_out               : out std_logic_vector(WORD_SIZE-1 downto 0);
+        data_buffer_out     : out std_logic_vector(WORD_SIZE-1 downto 0);
         parity_error_out    : out std_logic
 
     );

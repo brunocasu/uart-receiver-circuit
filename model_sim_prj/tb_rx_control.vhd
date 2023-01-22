@@ -29,7 +29,7 @@ architecture bhv of tb_rx_control is
         frame_start    : in std_logic;
         frame_stop     : in std_logic;
         frame_error    : in std_logic;
-        break          : in std_logic;
+        break_error    : in std_logic;
         parity_error   : in std_logic;
         y_valid_out       : out std_logic;
         synch_enable_out  : out std_logic;
@@ -54,7 +54,7 @@ begin
       frame_start      => frame_start_tb,
       frame_stop       => frame_stop_tb,
       frame_error      => frame_error_tb,
-      break            => break_tb,
+      break_error      => break_tb,
       parity_error     => parity_error_tb
     );
 
