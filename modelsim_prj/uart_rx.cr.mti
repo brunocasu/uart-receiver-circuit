@@ -14,10 +14,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity rx_control
 -- Compiling architecture struct of rx_control
 
-} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd
+} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
-** Error (suppressible): C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd(2): (vcom-1491) Empty source files.
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dff_n
+-- Compiling architecture struct of dff_n
 
 } {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -51,10 +54,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity tb_rx_control
 -- Compiling architecture bhv of tb_rx_control
 
-} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd
+} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
-** Error (suppressible): C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd(2): (vcom-1491) Empty source files.
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fifo
+-- Compiling architecture struct of fifo
 
 } {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_buff.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_buff.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -87,6 +93,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity tb_rx_synch
 -- Compiling architecture bhv of tb_rx_synch
+
+} {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_uart_fifo
+-- Compiling architecture bhv of tb_uart_fifo
 
 } {} {}} C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
