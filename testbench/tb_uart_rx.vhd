@@ -94,7 +94,7 @@ begin
         when 239 => rx_tb   <= '1';-- w4
         when 247 => rx_tb   <= '0';-- w5
         when 255 => rx_tb   <= '1';-- w6
-        when 263 => rx_tb   <= '1';-- parity bit
+        when 263 => rx_tb   <= '0';-- parity bit
         when 271 => rx_tb   <= '0';-- stop 1 - !!!FRAME ERROR!!!
         when 289 => rx_tb   <= '1';-- stop 2
 
@@ -123,6 +123,8 @@ begin
         when 465 => rx_tb  <= '0'; -- parity bit
         when 473 => rx_tb  <= '0'; -- stop 1
         when 481 => rx_tb  <= '0'; -- stop 2
+
+        when 490 => rx_tb  <= '1'; -- line release
 
         -- TX at Wrong Frequency (Bit rate > B=115200)
         when 501 => rx_tb  <= '0'; -- start bit (w = 0x2c)

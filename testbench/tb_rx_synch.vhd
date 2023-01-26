@@ -17,7 +17,7 @@ architecture bhv of tb_rx_synch is
   signal synch_rst_tb : std_logic := '0';
   signal rx_tb        : std_logic := '1';
   signal en_tb        : std_logic := '1';
-  signal shift_reg_tb : std_logic_vector(7 downto 0) := (others => '0'); -- fixed for W=7
+  signal data_out_tb : std_logic_vector(7 downto 0) := (others => '0'); -- fixed for W=7
   signal end_sim      : std_logic := '1';
 
   component rx_synch is
@@ -50,7 +50,7 @@ begin
       rst       => synch_rst_tb,
       en        => en_tb,
       rx        => rx_tb,
-      uart_data_out      => shift_reg_tb
+      uart_data_out      => data_out_tb
     );
 
   stimuli: process(clk_tb, rst_tb)

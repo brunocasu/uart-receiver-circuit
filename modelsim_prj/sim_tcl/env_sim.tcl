@@ -24,4 +24,3 @@ sim:/tb_uart_rx/uart_rx_DUT/synch_DUT/frame_error_out
 add wave  \
 sim:/tb_uart_rx/uart_rx_DUT/buff_DUT/parity_error_out
 run -all
-
