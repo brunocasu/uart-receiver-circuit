@@ -82,6 +82,8 @@ architecture struct of rx_control is
                         buff_clear_out   <= '0';
                         if frame_start = '1' then
                             rx_control_fsm_state <= FRAME_DETECTION_S;
+                        elsif frame_error = '1' then
+                            rx_control_fsm_state <= FRAME_ERROR_S;
                         end if;
 
                     when FRAME_DETECTION_S =>

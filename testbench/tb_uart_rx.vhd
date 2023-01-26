@@ -86,16 +86,16 @@ begin
         when 178 => rx_tb  <= '1'; -- stop 2
 
         -- asynch TX
-        when 199  => rx_tb  <= '0'; -- start bit (w = 0x5f)
-        when 207  => rx_tb  <= '1';-- w0
-        when 215 => rx_tb   <= '1';-- w1
+        when 199  => rx_tb  <= '0'; -- start bit (w = 0x5d)
+        when 202  => rx_tb  <= '1';-- w0  - !!!FRAME ERROR!!!
+        when 215 => rx_tb   <= '0';-- w1
         when 223 => rx_tb   <= '1';-- w2
         when 231 => rx_tb   <= '1';-- w3
         when 239 => rx_tb   <= '1';-- w4
         when 247 => rx_tb   <= '0';-- w5
         when 255 => rx_tb   <= '1';-- w6
-        when 263 => rx_tb   <= '0';-- parity bit
-        when 271 => rx_tb   <= '0';-- stop 1 - !!!FRAME ERROR!!!
+        when 263 => rx_tb   <= '1';-- parity bit
+        when 271 => rx_tb   <= '1';-- stop 1
         when 289 => rx_tb   <= '1';-- stop 2
 
         -- asynch TX

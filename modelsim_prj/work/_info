@@ -13,7 +13,7 @@ Ebreak_counter
 Z0 w1674262821
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 206
+!i122 262
 Z3 dC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/modelsim_prj
 Z4 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd
 Z5 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd
@@ -23,9 +23,9 @@ VU6C_:7>:U>b0RILQGc2>^3
 !s100 UcNEP?MS;;Vna43]Bcf^>0
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1674696017
+Z7 !s110 1674762098
 !i10b 1
-Z8 !s108 1674696016.000000
+Z8 !s108 1674762098.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd|
 Z10 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Astruct
 R1
 R2
 DEx4 work 13 break_counter 0 22 U6C_:7>:U>b0RILQGc2>^3
-!i122 206
+!i122 262
 l32
 L18 84
 Vi;o`YIWbL>lIicS14VG6h2
@@ -54,7 +54,7 @@ Edff_n
 Z13 w1674430262
 R1
 R2
-!i122 211
+!i122 267
 R3
 Z14 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd
 Z15 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd
@@ -66,9 +66,9 @@ R6
 32
 R7
 !i10b 1
-Z16 !s108 1674696017.000000
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd|
-Z18 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd|
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd|
+Z17 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/dff_n.vhd|
 !i113 1
 R11
 R12
@@ -76,7 +76,7 @@ Astruct
 R1
 R2
 DEx4 work 5 dff_n 0 22 k5UPSFYLS`3kggf][d6;H1
-!i122 211
+!i122 267
 l20
 L19 15
 VzeHd]Hem3Jj@1McPRWU?I0
@@ -85,20 +85,20 @@ R6
 32
 R7
 !i10b 1
+R8
 R16
 R17
-R18
 !i113 1
 R11
 R12
 Efifo
-Z19 w1674442617
+Z18 w1674442617
 R1
 R2
-!i122 212
+!i122 268
 R3
-Z20 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd
-Z21 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd
+Z19 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd
+Z20 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd
 l0
 L6 1
 V;@1?MTZf8;c:]SEY6eF3X1
@@ -107,9 +107,9 @@ R6
 32
 R7
 !i10b 1
-R16
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd|
-Z23 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd|
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd|
+Z22 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/fifo.vhd|
 !i113 1
 R11
 R12
@@ -117,7 +117,7 @@ Astruct
 R1
 R2
 DEx4 work 4 fifo 0 22 ;@1?MTZf8;c:]SEY6eF3X1
-!i122 212
+!i122 268
 l40
 L19 55
 VM=QV:eGMJSQa^9]bD]KXb0
@@ -126,20 +126,20 @@ R6
 32
 R7
 !i10b 1
-R16
+R8
+R21
 R22
-R23
 !i113 1
 R11
 R12
 Erx_buff
-Z24 w1674409032
+Z23 w1674409032
 R1
 R2
-!i122 207
+!i122 263
 R3
-Z25 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd
-Z26 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd
+Z24 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd
+Z25 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd
 l0
 L4 1
 VD2E3DjDHLENKOgRmT^GH83
@@ -148,9 +148,9 @@ R6
 32
 R7
 !i10b 1
-R16
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd|
-Z28 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd|
+R8
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd|
+Z27 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd|
 !i113 1
 R11
 R12
@@ -158,7 +158,7 @@ Astruct
 R1
 R2
 DEx4 work 7 rx_buff 0 22 D2E3DjDHLENKOgRmT^GH83
-!i122 207
+!i122 263
 l44
 L22 78
 V0JOo3NEbA`C]iHj[dz;`W2
@@ -167,20 +167,20 @@ R6
 32
 R7
 !i10b 1
-R16
+R8
+R26
 R27
-R28
 !i113 1
 R11
 R12
 Erx_control
-Z29 w1674146733
+Z28 w1674761598
 R1
 R2
-!i122 208
+!i122 264
 R3
-Z30 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd
-Z31 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd
+Z29 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd
+Z30 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd
 l0
 L4 1
 VC^<]X?YfhBC`?KEI5dXef2
@@ -189,9 +189,9 @@ R6
 32
 R7
 !i10b 1
-R16
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd|
-Z33 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd|
+R8
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd|
+Z32 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd|
 !i113 1
 R11
 R12
@@ -199,29 +199,29 @@ Astruct
 R1
 R2
 DEx4 work 10 rx_control 0 22 C^<]X?YfhBC`?KEI5dXef2
-!i122 208
+!i122 264
 l40
-L23 102
-V;0NgDi_]Flke=S`mObB9Z0
-!s100 MQLhCQFYB=kB4B?_ACG;e0
+L23 104
+Vh;KiCXnjo4NR9gTCoN@1E3
+!s100 _DHS]QWfDc[`?n5?<Nzd:1
 R6
 32
 R7
 !i10b 1
-R16
+R8
+R31
 R32
-R33
 !i113 1
 R11
 R12
 Erx_synch
-Z34 w1674421432
+Z33 w1674421432
 R1
 R2
-!i122 209
+!i122 265
 R3
-Z35 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd
-Z36 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd
+Z34 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd
+Z35 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd
 l0
 L4 1
 Vg9PcJ6BCAM:DF6P;S8IK71
@@ -230,9 +230,9 @@ R6
 32
 R7
 !i10b 1
-R16
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd|
-Z38 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd|
+R8
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd|
+Z37 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd|
 !i113 1
 R11
 R12
@@ -240,7 +240,7 @@ Astruct
 R1
 R2
 DEx4 work 8 rx_synch 0 22 g9PcJ6BCAM:DF6P;S8IK71
-!i122 209
+!i122 265
 l40
 L24 112
 V^dU61GLZ;FZWjHD18^14]0
@@ -249,31 +249,31 @@ R6
 32
 R7
 !i10b 1
-R16
+R8
+R36
 R37
-R38
 !i113 1
 R11
 R12
 Etb_break_counter
-Z39 w1674176106
+Z38 w1674176106
 R1
 R2
-!i122 214
+!i122 270
 R3
-Z40 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_break_counter.vhd
-Z41 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_break_counter.vhd
+Z39 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_break_counter.vhd
+Z40 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_break_counter.vhd
 l0
 L5 1
 VnHQz<Ei>LES_TNS@:28aE2
 !s100 1eA^:L7WIoU1?0c51;E8h1
 R6
 32
-R7
+Z41 !s110 1674762099
 !i10b 1
-R16
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_break_counter.vhd|
-Z43 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_break_counter.vhd|
+Z42 !s108 1674762099.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_break_counter.vhd|
+Z44 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_break_counter.vhd|
 !i113 1
 R11
 R12
@@ -281,38 +281,38 @@ Abhv
 R1
 R2
 DEx4 work 16 tb_break_counter 0 22 nHQz<Ei>LES_TNS@:28aE2
-!i122 214
+!i122 270
 l34
 L8 98
 VT>:Ub:O8;RiQ_2?i3BCGC1
 !s100 G2=S:YSC2Kk3cC;XINR]U3
 R6
 32
-R7
+R41
 !i10b 1
-R16
 R42
 R43
+R44
 !i113 1
 R11
 R12
 Etb_rx_buff
-Z44 w1674408585
+Z45 w1674408585
 R1
 R2
-!i122 215
+!i122 271
 R3
-Z45 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_buff.vhd
-Z46 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_buff.vhd
+Z46 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_buff.vhd
+Z47 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_buff.vhd
 l0
 L5 1
 VbHnQESzgXF=A]JMMinz2W1
 !s100 Tg<Rk8jKPz_Q`H<a:kl]L3
 R6
 32
-Z47 !s110 1674696018
+R41
 !i10b 1
-R16
+R42
 Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_buff.vhd|
 Z49 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_buff.vhd|
 !i113 1
@@ -322,16 +322,16 @@ Abhv
 R1
 R2
 DEx4 work 10 tb_rx_buff 0 22 bHnQESzgXF=A]JMMinz2W1
-!i122 215
+!i122 271
 l40
 L8 89
 VbWGBz0:6Md;?U:ISCba2[0
 !s100 ^@h_^95O3YPLJGBFjEeQY3
 R6
 32
-R47
+R41
 !i10b 1
-R16
+R42
 R48
 R49
 !i113 1
@@ -341,7 +341,7 @@ Etb_rx_control
 Z50 w1674273936
 R1
 R2
-!i122 216
+!i122 272
 R3
 Z51 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_control.vhd
 Z52 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_control.vhd
@@ -351,11 +351,11 @@ V[FI?R^H<N7P3za=^3FMD51
 !s100 BN5_[nkT4ZPOoSJakkDZb2
 R6
 32
-R47
+R41
 !i10b 1
-Z53 !s108 1674696018.000000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_control.vhd|
-Z55 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_control.vhd|
+R42
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_control.vhd|
+Z54 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_control.vhd|
 !i113 1
 R11
 R12
@@ -363,40 +363,40 @@ Abhv
 R1
 R2
 DEx4 work 13 tb_rx_control 0 22 [FI?R^H<N7P3za=^3FMD51
-!i122 216
+!i122 272
 l44
 L8 103
 V;_3J<:Y]02DaH5D[m4H0C1
 !s100 oG9g7z2XMQR35Sk@L?FmF2
 R6
 32
-R47
+R41
 !i10b 1
+R42
 R53
 R54
-R55
 !i113 1
 R11
 R12
 Etb_rx_synch
-Z56 w1674690879
+Z55 w1674690879
 R1
 R2
-!i122 217
+!i122 273
 R3
-Z57 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_synch.vhd
-Z58 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_synch.vhd
+Z56 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_synch.vhd
+Z57 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_synch.vhd
 l0
 L5 1
 Vb=Kcn:K<z^[NiNHER63do0
 !s100 TlLMU>FP`V<N5UNE0;YFz1
 R6
 32
-R47
+R41
 !i10b 1
-R53
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_synch.vhd|
-Z60 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_synch.vhd|
+R42
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_synch.vhd|
+Z59 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_rx_synch.vhd|
 !i113 1
 R11
 R12
@@ -404,81 +404,81 @@ Abhv
 R1
 R2
 DEx4 work 11 tb_rx_synch 0 22 b=Kcn:K<z^[NiNHER63do0
-!i122 217
+!i122 273
 l42
 L8 123
 VoIDEe?zZ]4M9:`ijfXAG31
 !s100 DG?b=UkIa9d7ZSb<Hi7Bn0
 R6
 32
-R47
+R41
 !i10b 1
-R53
+R42
+R58
 R59
-R60
 !i113 1
 R11
 R12
 Etb_uart_fifo
-Z61 w1674443046
+Z60 w1674443046
 R1
 R2
-!i122 219
+!i122 275
 R3
-Z62 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd
-Z63 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd
+Z61 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd
+Z62 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd
 l0
 L5 1
 VdhdhG3o9Z`^Vhn5WZ<gD23
 !s100 ffO0IkzK6P16kDnPBK<B>2
 R6
 32
-R47
+R41
 !i10b 1
-R53
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd|
-Z65 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd|
+R42
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd|
+Z64 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_fifo_mode.vhd|
 !i113 1
 R11
 R12
 Abhv
 R1
 R2
-Z66 DEx4 work 12 tb_uart_fifo 0 22 dhdhG3o9Z`^Vhn5WZ<gD23
-!i122 219
+Z65 DEx4 work 12 tb_uart_fifo 0 22 dhdhG3o9Z`^Vhn5WZ<gD23
+!i122 275
 l53
-Z67 L8 166
-Z68 V]d3[f;:S<1FeXI=5[RbJ:0
-Z69 !s100 6<>0S0dOzch:Bna2BDVXb3
+Z66 L8 166
+Z67 V]d3[f;:S<1FeXI=5[RbJ:0
+Z68 !s100 6<>0S0dOzch:Bna2BDVXb3
 R6
 32
-R47
+R41
 !i10b 1
-R53
+R42
+R63
 R64
-R65
 !i113 1
 R11
 R12
 Etb_uart_rx
-Z70 w1674695992
+Z69 w1674762078
 R1
 R2
-!i122 218
+!i122 274
 R3
-Z71 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_uart_rx.vhd
-Z72 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_uart_rx.vhd
+Z70 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_uart_rx.vhd
+Z71 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_uart_rx.vhd
 l0
 L5 1
 VGCa[TbY@T96_8WOEkbFPf1
 !s100 YBoOVUcGz?0RWWjNl_nYQ1
 R6
 32
-R47
+R41
 !i10b 1
-R53
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_uart_rx.vhd|
-Z74 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_uart_rx.vhd|
+R42
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_uart_rx.vhd|
+Z73 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/testbench/tb_uart_rx.vhd|
 !i113 1
 R11
 R12
@@ -486,29 +486,29 @@ Abhv
 R1
 R2
 DEx4 work 10 tb_uart_rx 0 22 GCa[TbY@T96_8WOEkbFPf1
-!i122 218
+!i122 274
 l37
 L8 181
-VMRPJ>Uog6^Qb0OGSYI1a_1
-!s100 o5E8VGibB2`Leda2VS]7g2
+VLMHlMgl;loHl=>mRag>7o1
+!s100 a1_Vf:WdMQJ9Ib^=U3hjR3
 R6
 32
-R47
+R41
 !i10b 1
-R53
+R42
+R72
 R73
-R74
 !i113 1
 R11
 R12
 Euart_rx
-Z75 w1674421507
+Z74 w1674421507
 R1
 R2
-!i122 210
+!i122 266
 R3
-Z76 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd
-Z77 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd
+Z75 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd
+Z76 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd
 l0
 L4 1
 VKU`F6WYRIP5lbcYYVcHA:1
@@ -517,9 +517,9 @@ R6
 32
 R7
 !i10b 1
-R16
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd|
-Z79 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd|
+R8
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd|
+Z78 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd|
 !i113 1
 R11
 R12
@@ -527,7 +527,7 @@ Astruct
 R1
 R2
 DEx4 work 7 uart_rx 0 22 KU`F6WYRIP5lbcYYVcHA:1
-!i122 210
+!i122 266
 l106
 L17 168
 VbnKhcWce07ITQmW9RXO:20
@@ -536,31 +536,31 @@ R6
 32
 R7
 !i10b 1
-R16
+R8
+R77
 R78
-R79
 !i113 1
 R11
 R12
 Exor_8_b
-Z80 w1674015046
+Z79 w1674015046
 R1
 R2
-!i122 213
+!i122 269
 R3
-Z81 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd
-Z82 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd
+Z80 8C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd
+Z81 FC:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd
 l0
 L4 1
 Ve^6V?4OmANdT7fPV9JE8[0
 !s100 g>?F<e;Qj0oNkEJGo:A=?0
 R6
 32
-R7
+R41
 !i10b 1
-R16
-Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd|
-Z84 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd|
+R8
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd|
+Z83 !s107 C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd|
 !i113 1
 R11
 R12
@@ -568,18 +568,18 @@ Abehavioral
 R1
 R2
 DEx4 work 7 xor_8_b 0 22 e^6V?4OmANdT7fPV9JE8[0
-!i122 213
+!i122 269
 l12
 L11 12
 Vg7XBC7XPXTA]Nz>>nifnR2
 !s100 NOkLa1n<mQc`3j@knQ:?62
 R6
 32
-R7
+R41
 !i10b 1
-R16
+R8
+R82
 R83
-R84
 !i113 1
 R11
 R12
