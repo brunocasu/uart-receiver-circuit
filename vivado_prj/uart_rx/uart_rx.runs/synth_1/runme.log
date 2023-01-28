@@ -1,0 +1,324 @@
+
+*** Running vivado
+    with args -log uart_rx.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_rx.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source uart_rx.tcl -notrace
+Command: synth_design -top uart_rx -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 80
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd:17]
+	Parameter WORD_SIZE bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'rx_control' declared at 'C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd:4' bound to instance 'control_DUT' of component 'rx_control' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'rx_control' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'rx_control' (1#1) [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_control.vhd:23]
+	Parameter OS_RATE bound to: 8 - type: integer 
+	Parameter WORD_SIZE bound to: 7 - type: integer 
+	Parameter STOP_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'rx_synch' declared at 'C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd:4' bound to instance 'synch_DUT' of component 'rx_synch' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'rx_synch' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd:24]
+	Parameter OS_RATE bound to: 8 - type: integer 
+	Parameter WORD_SIZE bound to: 7 - type: integer 
+	Parameter STOP_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'rx_synch' (2#1) [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_synch.vhd:24]
+	Parameter WORD_SIZE bound to: 7 - type: integer 
+	Parameter PARITY_RESULT bound to: 1'b0 
+INFO: [Synth 8-3491] module 'rx_buff' declared at 'C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd:4' bound to instance 'buff_DUT' of component 'rx_buff' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'rx_buff' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd:22]
+	Parameter WORD_SIZE bound to: 7 - type: integer 
+	Parameter PARITY_RESULT bound to: 1'b0 
+INFO: [Synth 8-3491] module 'xor_8_b' declared at 'C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd:4' bound to instance 'xor_DUT' of component 'xor_8_b' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'xor_8_b' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'xor_8_b' (3#1) [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/components/xor_8_b.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'rx_buff' (4#1) [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/rx_buffer.vhd:22]
+	Parameter OS_RATE bound to: 8 - type: integer 
+	Parameter BREAK_COUNT bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'break_counter' declared at 'C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd:4' bound to instance 'break_DUT' of component 'break_counter' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'break_counter' [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd:18]
+	Parameter OS_RATE bound to: 8 - type: integer 
+	Parameter BREAK_COUNT bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'break_counter' (5#1) [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/break_counter.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (6#1) [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/src/uart_rx.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 998.418 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/vivado_prj/uart_rx/uart_rx.srcs/constrs_1/new/uart-clock-contraint.xdc]
+Finished Parsing XDC File [C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/vivado_prj/uart_rx/uart_rx.srcs/constrs_1/new/uart-clock-contraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 998.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rx_control_fsm_state_reg' in module 'rx_control'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_synch_fsm_state_reg' in module 'rx_synch'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_buff_fsm_state_reg' in module 'rx_buff'
+INFO: [Synth 8-802] inferred FSM for state register 'break_counter_fsm_state_reg' in module 'break_counter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 reset_s |                             0000 |                             0000
+                  idle_s |                             0001 |                             0010
+       frame_detection_s |                             0010 |                             0011
+            validation_s |                             0011 |                             0100
+            data_valid_s |                             0100 |                             0101
+          parity_error_s |                             0101 |                             0110
+           frame_error_s |                             0110 |                             0111
+            uart_reset_s |                             0111 |                             0001
+           break_error_s |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_control_fsm_state_reg' using encoding 'sequential' in module 'rx_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 reset_s |                              000 |                              000
+                  idle_s |                              001 |                              001
+          start_detect_s |                              010 |                              010
+          receive_data_s |                              011 |                              011
+            data_ready_s |                              100 |                              100
+           stop_detect_s |                              101 |                              101
+             frame_end_s |                              110 |                              110
+           frame_error_s |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_synch_fsm_state_reg' using encoding 'sequential' in module 'rx_synch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 reset_s |                              000 |                              000
+             wait_data_s |                              001 |                              001
+             copy_data_s |                              010 |                              010
+          parity_check_s |                              011 |                              011
+            wait_clear_s |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_buff_fsm_state_reg' using encoding 'sequential' in module 'rx_buff'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 reset_s |                              000 |                              000
+                  idle_s |                              001 |                              010
+          start_detect_s |                              010 |                              011
+          receive_data_s |                              011 |                              100
+           break_error_s |                              100 |                              101
+            auto_reset_s |                              101 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'break_counter_fsm_state_reg' using encoding 'sequential' in module 'break_counter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   8 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 2     
+	   5 Input    8 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   8 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   5 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+	   9 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 5     
+	   6 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     2|
+|4     |LUT2   |    18|
+|5     |LUT3   |    36|
+|6     |LUT4   |    43|
+|7     |LUT5   |    26|
+|8     |LUT6   |    65|
+|9     |FDCE   |   117|
+|10    |IBUF   |     3|
+|11    |OBUF   |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 998.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 998.418 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 998.418 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1007.539 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1007.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1007.539 ; gain = 9.121
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bruno/Desktop/Clones/uart-receiver-circuit/vivado_prj/uart_rx/uart_rx.runs/synth_1/uart_rx.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_rx_utilization_synth.rpt -pb uart_rx_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 27 02:56:09 2023...

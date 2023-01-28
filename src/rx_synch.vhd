@@ -53,83 +53,85 @@ architecture struct of rx_synch is
                 count        := 0;
 
             elsif rising_edge(clk) then
-                case rx_synch_fsm_state is
-                    when RESET_S =>
-                        uart_data_out <= (others => '0');
-                        data_ready_out   <= '0';
-                        frame_start_out  <= '0';
-                        frame_stop_out   <= '0';
-                        frame_error_out  <= '0';
-                        bit_count    <= 0;
-                        count        := 0;
-                        if rx = '1' then
-                            rx_synch_fsm_state <= IDLE_S;
-                        end if;
-                    when IDLE_S =>
-                        -- data_ready_out <= '0';
-                        frame_stop_out <= '0';
-                        if rx = '0' then
-                            rx_synch_fsm_state <= START_DETECT_S;
-                            count := 1;
-                        end if;
-                    when START_DETECT_S =>
-                        -- frame_stop_out <= '0';
-                        if count = (OS_RATE/2) - 1 then
-                            if rx = '0' then
-                                rx_synch_fsm_state <= RECEIVE_DATA_S;
-                                count := 0;
-                            else
-                                rx_synch_fsm_state <= FRAME_ERROR_S;
-                            end if;
-                        else
-                            count := count + 1;
-                        end if;
-                    when RECEIVE_DATA_S =>
-                        frame_start_out <= '1';
-                        if count = OS_RATE - 1 then
-                            count := 0;
-                            if bit_count <= WORD_SIZE then
-                                uart_data_out(bit_count) <= rx;
-                                if bit_count = WORD_SIZE then
-                                    rx_synch_fsm_state <= DATA_READY_S;
-                                end if;
-                            end if;
-                            bit_count <= bit_count + 1;
-                        else
-                            count := count + 1;
-                        end if;
-                    when DATA_READY_S =>
-                        count := count + 1; -- must keep the counter updated (data is ready while the stop bit is being counted)
-                        data_ready_out <= '1';
-                        frame_start_out <= '0';
-                        rx_synch_fsm_state <= STOP_DETECT_S;
-
-                    when STOP_DETECT_S =>
-                        count := count + 1;
-                        data_ready_out <= '0';
-                        if count = OS_RATE then
-                            count := 0;
+                if en = '1' then
+                    case rx_synch_fsm_state is
+                        when RESET_S =>
+                            uart_data_out <= (others => '0');
+                            data_ready_out   <= '0';
+                            frame_start_out  <= '0';
+                            frame_stop_out   <= '0';
+                            frame_error_out  <= '0';
+                            bit_count    <= 0;
+                            count        := 0;
                             if rx = '1' then
-                                if bit_count = WORD_SIZE + STOP_BITS then
-                                    rx_synch_fsm_state <= FRAME_END_S;
-                                    bit_count  <= 0;
-                                    uart_data_out <= (others => '0');
+                                rx_synch_fsm_state <= IDLE_S;
+                            end if;
+                        when IDLE_S =>
+                            -- data_ready_out <= '0';
+                            frame_stop_out <= '0';
+                            if rx = '0' then
+                                rx_synch_fsm_state <= START_DETECT_S;
+                                count := 1;
+                            end if;
+                        when START_DETECT_S =>
+                            -- frame_stop_out <= '0';
+                            if count = (OS_RATE/2) - 1 then
+                                if rx = '0' then
+                                    rx_synch_fsm_state <= RECEIVE_DATA_S;
+                                    count := 0;
                                 else
-                                    bit_count <= bit_count + 1;
+                                    rx_synch_fsm_state <= FRAME_ERROR_S;
                                 end if;
                             else
-                                rx_synch_fsm_state <= FRAME_ERROR_S;
+                                count := count + 1;
                             end if;
-                        end if;
-                    when FRAME_END_S =>
-                        frame_stop_out <= '1';
-                        rx_synch_fsm_state <= IDLE_S;
-                    when FRAME_ERROR_S =>
-                        data_ready_out <= '0';
-                        frame_error_out <= '1';
+                        when RECEIVE_DATA_S =>
+                            frame_start_out <= '1';
+                            if count = OS_RATE - 1 then
+                                count := 0;
+                                if bit_count <= WORD_SIZE then
+                                    uart_data_out(bit_count) <= rx;
+                                    if bit_count = WORD_SIZE then
+                                        rx_synch_fsm_state <= DATA_READY_S;
+                                    end if;
+                                end if;
+                                bit_count <= bit_count + 1;
+                            else
+                                count := count + 1;
+                            end if;
+                        when DATA_READY_S =>
+                            count := count + 1; -- must keep the counter updated (data is ready while the stop bit is being counted)
+                            data_ready_out <= '1';
+                            frame_start_out <= '0';
+                            rx_synch_fsm_state <= STOP_DETECT_S;
 
-                    when others => null;
-                end case;
+                        when STOP_DETECT_S =>
+                            count := count + 1;
+                            data_ready_out <= '0';
+                            if count = OS_RATE then
+                                count := 0;
+                                if rx = '1' then
+                                    if bit_count = WORD_SIZE + STOP_BITS then
+                                        rx_synch_fsm_state <= FRAME_END_S;
+                                        bit_count  <= 0;
+                                        uart_data_out <= (others => '0');
+                                    else
+                                        bit_count <= bit_count + 1;
+                                    end if;
+                                else
+                                    rx_synch_fsm_state <= FRAME_ERROR_S;
+                                end if;
+                            end if;
+                        when FRAME_END_S =>
+                            frame_stop_out <= '1';
+                            rx_synch_fsm_state <= IDLE_S;
+                        when FRAME_ERROR_S =>
+                            data_ready_out <= '0';
+                            frame_error_out <= '1';
+
+                        when others => null;
+                    end case;
+                end if;
             end if;
         end process;
 end architecture;

@@ -1,120 +1,17 @@
-# Compile of break_counter.vhd was successful.
-# Compile of rx_buffer.vhd was successful.
-# Compile of rx_control.vhd was successful.
-# Compile of rx_synch.vhd was successful.
-# Compile of uart_rx.vhd was successful.
-# Compile of dff_n.vhd was successful.
-# Compile of fifo.vhd was successful.
-# Compile of xor_8_b.vhd was successful.
-# Compile of tb_break_counter.vhd was successful.
-# Compile of tb_rx_buff.vhd was successful.
-# Compile of tb_rx_control.vhd was successful.
-# Compile of tb_rx_synch.vhd was successful.
-# Compile of tb_uart_rx.vhd was successful.
-# Compile of tb_fifo_mode.vhd was successful.
-# 14 compiles, 0 failed with no errors.
-source sim_tcl/env_sim.tcl
-# vsim -gui work.tb_uart_rx 
-# Start time: 20:33:49 on Jan 26,2023
+source sim_tcl/fifo_sim.tcl
+# vsim -gui work.tb_uart_fifo 
+# Start time: 05:03:53 on Jan 27,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_uart_rx(bhv)
+# Loading work.tb_uart_fifo(bhv)
 # Loading work.uart_rx(struct)
 # Loading work.rx_control(struct)
 # Loading work.rx_synch(struct)
 # Loading work.rx_buff(struct)
 # Loading work.xor_8_b(behavioral)
 # Loading work.break_counter(struct)
-# Compile of break_counter.vhd was successful.
-# Compile of rx_buffer.vhd was successful.
-# Compile of rx_control.vhd was successful.
-# Compile of rx_synch.vhd was successful.
-# Compile of uart_rx.vhd was successful.
-# Compile of dff_n.vhd was successful.
-# Compile of fifo.vhd was successful.
-# Compile of xor_8_b.vhd was successful.
-# Compile of tb_break_counter.vhd was successful.
-# Compile of tb_rx_buff.vhd was successful.
-# Compile of tb_rx_control.vhd was successful.
-# Compile of tb_rx_synch.vhd was successful.
-# Compile of tb_uart_rx.vhd was successful.
-# Compile of tb_fifo_mode.vhd was successful.
-# 14 compiles, 0 failed with no errors.
-source sim_tcl/env_sim.tcl
-# End time: 20:35:03 on Jan 26,2023, Elapsed time: 0:01:14
-# Errors: 0, Warnings: 3
-# vsim -gui work.tb_uart_rx 
-# Start time: 20:35:03 on Jan 26,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_uart_rx(bhv)
-# Loading work.uart_rx(struct)
-# Loading work.rx_control(struct)
-# Loading work.rx_synch(struct)
-# Loading work.rx_buff(struct)
-# Loading work.xor_8_b(behavioral)
-# Loading work.break_counter(struct)
-# Compile of break_counter.vhd was successful.
-# Compile of rx_buffer.vhd was successful.
-# Compile of rx_control.vhd was successful.
-# Compile of rx_synch.vhd was successful.
-# Compile of uart_rx.vhd was successful.
-# Compile of dff_n.vhd was successful.
-# Compile of fifo.vhd was successful.
-# Compile of xor_8_b.vhd was successful.
-# Compile of tb_break_counter.vhd was successful.
-# Compile of tb_rx_buff.vhd was successful.
-# Compile of tb_rx_control.vhd was successful.
-# Compile of tb_rx_synch.vhd was successful.
-# Compile of tb_uart_rx.vhd was successful.
-# Compile of tb_fifo_mode.vhd was successful.
-# 14 compiles, 0 failed with no errors.
-source sim_tcl/env_sim.tcl
-# End time: 20:38:41 on Jan 26,2023, Elapsed time: 0:03:38
-# Errors: 0, Warnings: 2
-# vsim -gui work.tb_uart_rx 
-# Start time: 20:38:41 on Jan 26,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_uart_rx(bhv)
-# Loading work.uart_rx(struct)
-# Loading work.rx_control(struct)
-# Loading work.rx_synch(struct)
-# Loading work.rx_buff(struct)
-# Loading work.xor_8_b(behavioral)
-# Loading work.break_counter(struct)
-# Compile of break_counter.vhd was successful.
-# Compile of rx_buffer.vhd was successful.
-# Compile of rx_control.vhd was successful.
-# Compile of rx_synch.vhd was successful.
-# Compile of uart_rx.vhd was successful.
-# Compile of dff_n.vhd was successful.
-# Compile of fifo.vhd was successful.
-# Compile of xor_8_b.vhd was successful.
-# Compile of tb_break_counter.vhd was successful.
-# Compile of tb_rx_buff.vhd was successful.
-# Compile of tb_rx_control.vhd was successful.
-# Compile of tb_rx_synch.vhd was successful.
-# Compile of tb_uart_rx.vhd was successful.
-# Compile of tb_fifo_mode.vhd was successful.
-# 14 compiles, 0 failed with no errors.
-source sim_tcl/env_sim.tcl
-# End time: 20:41:43 on Jan 26,2023, Elapsed time: 0:03:02
-# Errors: 0, Warnings: 2
-# vsim -gui work.tb_uart_rx 
-# Start time: 20:41:43 on Jan 26,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_uart_rx(bhv)
-# Loading work.uart_rx(struct)
-# Loading work.rx_control(struct)
-# Loading work.rx_synch(struct)
-# Loading work.rx_buff(struct)
-# Loading work.xor_8_b(behavioral)
-# Loading work.break_counter(struct)
-# End time: 21:35:23 on Jan 26,2023, Elapsed time: 0:53:40
+# Loading work.fifo(struct)
+# Loading work.dff_n(struct)
+# End time: 05:08:20 on Jan 27,2023, Elapsed time: 0:04:27
 # Errors: 0, Warnings: 1

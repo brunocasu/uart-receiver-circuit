@@ -102,6 +102,8 @@ architecture struct of uart_rx is
   signal env_break_error    : std_logic := '0';
   signal env_y_valid        : std_logic := '0';
   signal env_y              : std_logic_vector(WORD_SIZE - 1 downto 0) := (others => '0');
+  signal env_synch_en       : std_logic := '1';
+  signal env_buff_en        : std_logic := '1';
 
   begin
     -- Control Block: controls the states of the UART rx, and provides the data validation output
@@ -118,9 +120,9 @@ architecture struct of uart_rx is
          break_error      => env_break_error,
          parity_error     => env_parity_error,
          y_valid_out      => env_y_valid,
-         -- synch_enable_out =>
+         synch_enable_out => env_synch_en,
          synch_reset_out  => env_uart_synch_rst,
-         -- buff_enable_out  =>
+         buff_enable_out  => env_buff_en,
          buff_reset_out   => env_uart_buff_rst,
          buff_clear_out   => env_buff_clear
 
